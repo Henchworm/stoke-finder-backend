@@ -13,4 +13,8 @@ class User < ApplicationRecord
   validates_presence_of :activity_preferences, require: true
 
   has_secure_password
+
+  has_many :custom_rec_areas
+  has_many :user_adventures
+  has_many :adventures, through: :user_adventures
 end

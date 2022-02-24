@@ -1,6 +1,37 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/adventure.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user_adventure.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user.rb": {
         "lines": [
           1,
@@ -18,13 +49,22 @@
           1,
           null,
           1,
+          null,
+          1,
+          1,
+          1,
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/application_record.rb": {
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/custom_rec_area.rb": {
         "lines": [
           1,
           1,
+          1,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -75,6 +115,6 @@
         }
       }
     },
-    "timestamp": 1645661653
+    "timestamp": 1645686050
   }
 }
