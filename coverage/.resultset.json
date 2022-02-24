@@ -1,6 +1,25 @@
 {
   "RSpec": {
     "coverage": {
+      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/custom_rec_area.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/application_record.rb": {
+        "lines": [
+          1,
+          1,
+          null
+        ]
+      },
       "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/user.rb": {
         "lines": [
           1,
@@ -21,13 +40,6 @@
           null
         ]
       },
-      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -38,8 +50,28 @@
         "branches": {
         }
       },
-      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/custom_rec_area.rb": {
+      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/adventure.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/user_adventure.rb": {
+        "lines": [
+          0,
           0,
           0,
           0
@@ -84,6 +116,6 @@
         }
       }
     },
-    "timestamp": 1645679232
+    "timestamp": 1645682125
   }
 }
