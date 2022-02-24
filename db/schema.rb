@@ -16,10 +16,10 @@ ActiveRecord::Schema.define(version: 2022_02_24_052205) do
   enable_extension "plpgsql"
 
   create_table "adventures", force: :cascade do |t|
-    t.text "guest_email_address"
+    t.text "guest_email_addresses"
     t.datetime "date"
     t.text "comment"
-    t.string "activity"
+    t.text "activities"
     t.boolean "favorite"
     t.integer "rec_area_id"
     t.bigint "custom_rec_areas_id"
