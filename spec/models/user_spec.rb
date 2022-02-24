@@ -15,6 +15,13 @@ RSpec.describe User, type: :model do
     it { should validate_presence_of :activity_preferences }
   end
 
+  describe "relationships" do
+    it { should have_many :user_adventures }
+    it { should have_many :custom_rec_areas }
+    it { should have_many(:adventures).through(:user_adventures) }
+
+  end
+
   describe "creation" do
     it "user attributes" do
       user_1 = FactoryBot.create(:user)
