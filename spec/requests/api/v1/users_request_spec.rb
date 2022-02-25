@@ -9,7 +9,7 @@ RSpec.describe 'user requests' do
     parsed = JSON.parse(response.body , symbolize_names: true)[:data]
     
     expect(response).to be_successful
-    require 'pry'; binding.pry
+    
     expect(parsed[:id]).to be_a(String)
     expect(parsed[:attributes][:user_name]).to be_a(String)
     expect(parsed[:attributes][:email]).to be_a(String)
