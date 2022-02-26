@@ -36,21 +36,13 @@
         "lines": [
           1,
           1,
-          null,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
-          1,
           1,
           null,
-          1,
           null,
-          1,
+          null,
+          null,
+          null,
+          null,
           1,
           1,
           null
@@ -73,7 +65,6 @@
           1,
           1,
           1,
-          null,
           null
         ]
       },
@@ -91,7 +82,32 @@
           1,
           1,
           null,
+          1,
           null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
+          1,
+          null,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
+          null
+        ]
+      },
+      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/custom_rec_area.rb": {
+        "lines": [
+          1,
+          1,
+          1,
           null,
           null,
           null,
@@ -102,8 +118,6 @@
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/mailers/application_mailer.rb": {
         "lines": [
           0,
-          0,
-          0,
           0
         ],
         "branches": {
@@ -111,6 +125,9 @@
       },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/jobs/application_job.rb": {
         "lines": [
+          0,
+          0,
+          0,
           0,
           0
         ],
