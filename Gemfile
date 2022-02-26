@@ -39,6 +39,8 @@ group :development, :test do
   gem 'factory_bot_rails'
   gem 'geocoder'
   gem 'rspec_junit_formatter'
+  gem 'faker'
+
 end
 
 group :test do
@@ -49,7 +51,6 @@ group :test do
   gem 'simplecov'
   gem 'vcr'
   gem 'webmock'
-  gem 'faker'
 end
 
 group :development do

@@ -5,5 +5,10 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
-require "faker"
-user_1 = FactoryBot.create(:user, id: 1)
+user_1 = User.create!(username: "Borton Preekers",
+                      email:"borton@gmail.com",
+                      street_address: "123 Lane",
+                      city: "Denver",
+                      state: "CO",
+                      zipcode:"80211",
+                      activity_preferences: "Biking")
