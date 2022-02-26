@@ -1,5 +1,6 @@
 require 'rails_helper'
 RSpec.describe User, type: :model do
+
   describe 'validations' do
     it { should validate_presence_of :user_name }
     it { should validate_uniqueness_of :email }
@@ -22,8 +23,8 @@ RSpec.describe User, type: :model do
 
   describe "creation" do
     it "user attributes", :vcr do
-      user_1 = FactoryBot.create(:user, street_address: "936 Akin. Ave", city: "Fort Collins", state: "Colorado", zipcode: "80521")
-      
+      user_1 = FactoryBot.create(:user, street_address: "19072 Ave 300", city: "Exeter", state: "California", zipcode: "93221")
+      user_1.add_coordinates
       expect(user_1.user_name).to be_a(String)
       expect(user_1.email).to be_a(String)
       expect(user_1.password).to be_a(String)
@@ -36,10 +37,10 @@ RSpec.describe User, type: :model do
     end
   end
 
-  describe 'instance methods' do 
+  describe 'instance methods' do
     let(:user_1) {FactoryBot.create(:user, street_address: "19072 Ave 300", city: "Exeter", state: "California", zipcode: "93221")}
-
-    it 'concats assigns coordinates to user after creation', :vcr do 
+    it 'assigns coords to user', :vcr do
+      user_1.add_coordinates
       expect(user_1.latitude).to eq(36.268349507128)
       expect(user_1.longitude).to eq(-119.15010250939521)
     end
