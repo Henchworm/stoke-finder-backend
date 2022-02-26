@@ -1,37 +1,6 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/adventure.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/application_record.rb": {
-        "lines": [
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user_adventure.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user.rb": {
         "lines": [
           1,
@@ -57,23 +26,18 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/custom_rec_area.rb": {
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/application_record.rb": {
         "lines": [
           1,
           1,
-          1,
-          null,
-          null,
-          null,
-          null,
           null
         ]
       },
@@ -108,7 +72,57 @@
           null
         ]
       },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/controllers/api/v1/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/custom_rec_area.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/adventure.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user_adventure.rb": {
         "lines": [
           0,
           0,
@@ -147,6 +161,6 @@
         }
       }
     },
-    "timestamp": 1645900323
+    "timestamp": 1645902351
   }
 }
