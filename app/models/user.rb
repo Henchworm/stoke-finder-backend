@@ -18,7 +18,7 @@ class User < ApplicationRecord
   has_many :user_adventures
   has_many :adventures, through: :user_adventures
 
-  # after_save :add_coordinates, on: [:create, :update]
+  # after_initialize :add_coordinates, on: [:create, :update]
 
   def add_coordinates
     if street_address || city || state == nil
