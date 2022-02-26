@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe 'user requests' do
-  it 'renders user to json' do 
-    user = FactoryBot.create(:user)
+  it 'renders user to json', :vcr do 
+    user = FactoryBot.create(:user, street_address: "19072 Ave 300", city: "Exeter", state: "California", zipcode: "93221")
 
     get api_v1_user_path(user)
     

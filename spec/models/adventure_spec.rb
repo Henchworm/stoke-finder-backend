@@ -16,8 +16,7 @@ RSpec.describe Adventure, type: :model do
   end
 
   describe "creation" do
-    it "creates adventure" do
-      user_1 = FactoryBot.create(:user)
+    it "creates adventure", :vcr do
       custom_rec_area_1 = FactoryBot.create(:custom_rec_area)
       adventure_1 = Adventure.create(
       rec_area_id: custom_rec_area_1.id,

@@ -32,4 +32,6 @@ module StokeFinder
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
   end
+
+  # Geocoder.configure(lookup: :google_premier, api_key: [key, client, channel])
 end
