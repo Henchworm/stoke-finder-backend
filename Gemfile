@@ -38,6 +38,7 @@ group :development, :test do
   gem 'figaro'
   gem 'factory_bot_rails'
   gem 'geocoder'
+  gem 'rspec_junit_formatter'
 end
 
 group :test do
