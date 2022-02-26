@@ -18,13 +18,12 @@ class User < ApplicationRecord
   has_many :user_adventures
   has_many :adventures, through: :user_adventures
 
-  after_commit :add_coordinates
-  
-  def add_coordinates 
+  # after_save :add_coordinates, on: [:create, :update]
+
+  def add_coordinates
     if street_address || city || state == nil
       exit
     end
-
     address = [street_address, city, state].compact.join(', ')
     cords = Geocoder.search(address).first.data
     self.latitude = cords["lat"]

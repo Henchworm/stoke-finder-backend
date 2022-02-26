@@ -1,19 +1,39 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/adventure.rb": {
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user.rb": {
         "lines": [
           1,
           1,
+          null,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          1,
+          null,
+          1,
+          1,
           1,
           null,
           null,
           null,
-          null,
-          null,
-          null,
           1,
           1,
+          1,
+          null,
+          0,
+          0,
+          0,
+          0,
+          null,
           null
         ]
       },
@@ -32,22 +52,6 @@
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          1,
-          1,
-          null
-        ]
-      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/custom_rec_area.rb": {
         "lines": [
           1,
@@ -60,50 +64,7 @@
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/controllers/api/v1/users_controller.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/controllers/application_controller.rb": {
-        "lines": [
-          1,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/user_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          1,
-          null,
-          1,
-          1,
-          1,
-          null,
-          null,
-          0,
-          0,
-          0,
-          0,
-          null,
-          null
-        ]
-      },
-      "/Users/johnnapier/Turing/mod3/projects/stoke-finder-backend/app/models/custom_rec_area.rb": {
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/adventure.rb": {
         "lines": [
           1,
           1,
@@ -112,11 +73,35 @@
           null,
           null,
           null,
+          null,
+          null,
+          1,
+          1,
           null
         ]
       },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/mailers/application_mailer.rb": {
         "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/user_serializer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
           0,
           0
         ],
@@ -124,6 +109,22 @@
         }
       },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/jobs/application_job.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/controllers/application_controller.rb": {
+        "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/controllers/api/v1/users_controller.rb": {
         "lines": [
           0,
           0,
@@ -155,6 +156,6 @@
         }
       }
     },
-    "timestamp": 1645748769
+    "timestamp": 1645843886
   }
 }
