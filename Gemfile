@@ -40,6 +40,7 @@ group :development, :test do
   gem 'geocoder'
   gem 'rspec_junit_formatter'
   gem 'faker'
+  gem 'figaro'
 
 end
 
