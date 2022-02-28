@@ -1,0 +1,678 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=1634%2018th%20St,%20Denver,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Mon, 28 Feb 2022 22:15:53 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjc0NjMzMCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJub2RlIiwib3NtX2lkIjoyNzk2NDQwOTgsImJvdW5kaW5nYm94IjpbIjM5Ljc1MzQ5NDYiLCIzOS43NTM1OTQ2IiwiLTEwNC45OTg1MzMxIiwiLTEwNC45OTg0MzMxIl0sImxhdCI6IjM5Ljc1MzU0NDYiLCJsb24iOiItMTA0Ljk5ODQ4MzEiLCJkaXNwbGF5X25hbWUiOiJXeW5rb29wIEJyZXdpbmcgQ29tcGFueSwgMTYzNCwgMTh0aCBTdHJlZXQsIExvd2VyIERvd250b3duLCBEZW52ZXIsIENvbG9yYWRvLCA4MDIwMiwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoiYW1lbml0eSIsInR5cGUiOiJwdWIiLCJpbXBvcnRhbmNlIjowLjUyMDk5OTk5OTk5OTk5OTksImljb24iOiJodHRwczovL25vbWluYXRpbS5vcGVuc3RyZWV0bWFwLm9yZy91aS9tYXBpY29ucy8vZm9vZF9wdWIucC4yMC5wbmciLCJhZGRyZXNzIjp7ImFtZW5pdHkiOiJXeW5rb29wIEJyZXdpbmcgQ29tcGFueSIsImhvdXNlX251bWJlciI6IjE2MzQiLCJyb2FkIjoiMTh0aCBTdHJlZXQiLCJuZWlnaGJvdXJob29kIjoiTG93ZXIgRG93bnRvd24iLCJjaXR5IjoiRGVudmVyIiwic3RhdGUiOiJDb2xvcmFkbyIsInBvc3Rjb2RlIjoiODAyMDIiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19LHsicGxhY2VfaWQiOjMwMDA3NjAyMSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjgwNTkwMDg2NiwiYm91bmRpbmdib3giOlsiMzkuNzUzMTU1NjI4MjQ4IiwiMzkuNzUzMjU1NjI4MjQ4IiwiLTEwNC45OTc5NzE2MTMxNyIsIi0xMDQuOTk3ODcxNjEzMTciXSwibGF0IjoiMzkuNzUzMjA1NjI4MjQ3NTIiLCJsb24iOiItMTA0Ljk5NzkyMTYxMzE3MjM4IiwiZGlzcGxheV9uYW1lIjoiMTYzNCwgMTh0aCBTdHJlZXQsIExvd2VyIERvd250b3duLCBEZW52ZXIsIENvbG9yYWRvLCA4MDIwMiwgVW5pdGVkIFN0YXRlcyIsImNsYXNzIjoicGxhY2UiLCJ0eXBlIjoiaG91c2UiLCJpbXBvcnRhbmNlIjowLjUyMDk5OTk5OTk5OTk5OTksImFkZHJlc3MiOnsiaG91c2VfbnVtYmVyIjoiMTYzNCIsInJvYWQiOiIxOHRoIFN0cmVldCIsIm5laWdoYm91cmhvb2QiOiJMb3dlciBEb3dudG93biIsImNpdHkiOiJEZW52ZXIiLCJzdGF0ZSI6IkNvbG9yYWRvIiwicG9zdGNvZGUiOiI4MDIwMiIsImNvdW50cnkiOiJVbml0ZWQgU3RhdGVzIiwiY291bnRyeV9jb2RlIjoidXMifX1d
+  recorded_at: Mon, 28 Feb 2022 22:15:53 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=HIKING%20BIKING&full=true&latitude=39.7535446&limit=10&longitude=-104.9984831&radius=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - rec_api_key
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Mon, 28 Feb 2022 22:15:55 GMT
+      X-Amz-Apigw-Id:
+      - ORhwHEB0PHcFrkw=
+      X-Amzn-Trace-Id:
+      - Root=1-621d499a-e2ca2d4c85ca2c046e43872d;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - 3a7e0edc-ec02-4052-93b5-25cd2ca96f58
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d126a6b57e5778e7435ff2e74117527a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - D38V-El8Ichhb-P0Wcd2yAZsZco1mA0h7YFOPTjWOTU8iYco8EfM6g==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"RecAreaID":"3266","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Two
+        Ponds National Wildlife Refuge","RecAreaDescription":"Two Ponds National Wildlife
+        Refuge (NWR) is located in Arvada, Colorado, a suburb of Denver. The Refuge
+        consists of approximately 72 acres, with 63 acres of upland habitat and 9
+        acres of wetlands. Refuge habitat supports over 100 different species of birds.
+        \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s primary goals
+        is to provide environmental education programs for urban school children.
+        Each year, hundreds of school children learn about wildlife and wetlands.
+        Two Ponds NWR is administered by staff from the Rocky Mountain Arsenal NWR.","RecAreaFeeDescription":"","RecAreaDirections":"Two
+        Ponds NWR is located on West 80th Avenue in Arvada between Wadsworth Avenue
+        and Kipling Avenue.  To get to Two Ponds NWR from downtown Denver, take I-25
+        north to Highway 36 west.  Exit at Federal Boulevard and head north to West
+        80th Avenue.  Refuge parking is located on 80th Avenue between Wadsworth Avenue
+        and Kipling Avenue.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.10606,39.83974]},"RecAreaLongitude":-105.10606,"RecAreaLatitude":39.83974,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2755","RecAreaID":"3266","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":10,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"08343725650580f8169f7a3e65d297e1","LinkType":"Official
+        Web Site","EntityID":"3266","EntityType":"RecArea","Title":"","Description":"","URL":"http://twoponds.fws.gov"}],"MEDIA":[]},{"RecAreaID":"1583","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Rocky
+        Mountain Arsenal National Wildlife Refuge","RecAreaDescription":"Rocky Mountain
+        Arsenal National Wildlife Refuge (NWR), located 10 minutes from downtown Denver,
+        is nearly 17,000 acres, making it one of the largest urban wildlife refuges
+        in the United States. It consists of open lakes, wetlands, prairie grasslands,
+        and woodlands. \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s
+        primary goals is to provide environmental education programs for urban school
+        children. Each year, thousands of visitors come to the Refuge to appreciate
+        its wildlife, view the scenic habitat, and learn about native prairie species.
+        The Arsenal has been called \"a significant habitat island for wildlife\"
+        and \"a place to renew the relationship with nature.\" Popular activities
+        include interpretative programs, environmental education, fishing, wildlife
+        observation, and photography.","RecAreaFeeDescription":"","RecAreaDirections":"Rocky
+        Mountain Arsenal NWR is 10 minutes from downtown Denver and 30 minutes from
+        the Rocky Mountain foothills.  It is located in Commerce City, Colorado, a
+        Denver suburb located in Adams County.  To get to Rocky Mountain Arsenal NWR
+        from downtown Denver, take I-25 north to I-70 east.  Exit at Havana Street
+        and head north.  Enter through the South Gate located at 56th Avenue and Havana
+        Street.  From Denver International Airport, take Pena Boulevard south to 56th
+        Avenue heading west.  Turn north on Havana Street and enter through the South
+        Gate.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.847,39.8345]},"RecAreaLongitude":-104.847,"RecAreaLatitude":39.8345,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2156","RecAreaID":"1583","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":8,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":10,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
+        CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]},{"RecAreaID":"306","OrgRecAreaID":"306","ParentOrgID":"130","RecAreaName":"Bear
+        Creek Lake","RecAreaDescription":"Bear Creek Dam, the last of three dams built
+        to protect the Denver region from floods, is located on the southwest edge
+        of suburban Lakewood at the confluence of Bear Creek and Turkey Creek.  This
+        project is known for its diverse bird and waterfowl population and its striking
+        scenic views.  Recreation opportunities include camping, horseback riding,
+        picnicking, hiking, boating, archery and nature study.","RecAreaFeeDescription":"","RecAreaDirections":"Located
+        just west of Denver near Morrison, on CO 8.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.128738,39.653304]},"RecAreaLongitude":-105.128738,"RecAreaLatitude":39.653304,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23","ORGANIZATION":[{"OrgID":"130","OrgName":"US
+        Army Corps of Engineers","OrgImageURL":"uasce.gif","OrgURLText":"","OrgURLAddress":"http://www.usace.army.mil","OrgType":"Federal
+        Agency","OrgAbbrevName":"USACE","OrgJurisdictionType":"State","OrgParentID":"162","LastUpdatedDate":"2018-06-26"}],"FACILITY":[{"FacilityID":"247879","FacilityName":"Bear
+        Creek Lake  City Park","ResourceLink":"https://ridb.recreation.gov/api/v1/facilities/247879"}],"RECAREAADDRESS":[{"RecAreaAddressID":"465508","RecAreaID":"306","RecAreaAddressType":"Default","RecAreaStreetAddress1":"9307
+        S. Wadsworth Blvd","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Littleton","PostalCode":"80128-6901","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2015-06-30"}],"ACTIVITY":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"306","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"306","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HORSEBACK
+        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"306","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""},{"ActivityID":44,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HOTEL/LODGE/RESORT
+        PRIVATELY OWNED","RecAreaActivityDescription":"Lodging","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"8e329fae748ba519ea610decc953753c","LinkType":"Map","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Map","Description":"","URL":"http://www.nwo.usace.army.mil/Missions/DamandLakeProjects/TriLakesProjects/BearCreekDam.aspx"},{"EntityLinkID":"6122bafbf0eec4716e3cb8850512c16c","LinkType":"Official
+        Web Site","EntityID":"306","EntityType":"RecArea","Title":"Bear Creek Lake
+        Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G672285"},{"EntityLinkID":"0bfb0856091fce0e68cbbfd1ea3007f0","LinkType":"Other","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G672285"}],"MEDIA":[{"EntityMediaID":"326049","MediaType":"Image","EntityID":"306","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2138.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":3,"TOTAL_COUNT":3},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Mon, 28 Feb 2022 22:15:55 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=HIKING%20BIKING&full=true&latitude=39.7535446&limit=10&longitude=-104.9984831&radius=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - rec_api_key
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Mon, 28 Feb 2022 22:15:56 GMT
+      X-Amz-Apigw-Id:
+      - ORhwVH6KPHcFeig=
+      X-Amzn-Trace-Id:
+      - Root=1-621d499b-fdc89fedc48282ed65c1a314;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - 582af85b-9690-4d64-98b5-372382533277
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 d126a6b57e5778e7435ff2e74117527a.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - aMQrwiEMP45x0OJW9Y4DFOz6rzq6YzX3qw39KMtTYkQfkoR2BqM5Ow==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"RecAreaID":"3266","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Two
+        Ponds National Wildlife Refuge","RecAreaDescription":"Two Ponds National Wildlife
+        Refuge (NWR) is located in Arvada, Colorado, a suburb of Denver. The Refuge
+        consists of approximately 72 acres, with 63 acres of upland habitat and 9
+        acres of wetlands. Refuge habitat supports over 100 different species of birds.
+        \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s primary goals
+        is to provide environmental education programs for urban school children.
+        Each year, hundreds of school children learn about wildlife and wetlands.
+        Two Ponds NWR is administered by staff from the Rocky Mountain Arsenal NWR.","RecAreaFeeDescription":"","RecAreaDirections":"Two
+        Ponds NWR is located on West 80th Avenue in Arvada between Wadsworth Avenue
+        and Kipling Avenue.  To get to Two Ponds NWR from downtown Denver, take I-25
+        north to Highway 36 west.  Exit at Federal Boulevard and head north to West
+        80th Avenue.  Refuge parking is located on 80th Avenue between Wadsworth Avenue
+        and Kipling Avenue.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.10606,39.83974]},"RecAreaLongitude":-105.10606,"RecAreaLatitude":39.83974,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2755","RecAreaID":"3266","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":10,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"08343725650580f8169f7a3e65d297e1","LinkType":"Official
+        Web Site","EntityID":"3266","EntityType":"RecArea","Title":"","Description":"","URL":"http://twoponds.fws.gov"}],"MEDIA":[]},{"RecAreaID":"1583","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Rocky
+        Mountain Arsenal National Wildlife Refuge","RecAreaDescription":"Rocky Mountain
+        Arsenal National Wildlife Refuge (NWR), located 10 minutes from downtown Denver,
+        is nearly 17,000 acres, making it one of the largest urban wildlife refuges
+        in the United States. It consists of open lakes, wetlands, prairie grasslands,
+        and woodlands. \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s
+        primary goals is to provide environmental education programs for urban school
+        children. Each year, thousands of visitors come to the Refuge to appreciate
+        its wildlife, view the scenic habitat, and learn about native prairie species.
+        The Arsenal has been called \"a significant habitat island for wildlife\"
+        and \"a place to renew the relationship with nature.\" Popular activities
+        include interpretative programs, environmental education, fishing, wildlife
+        observation, and photography.","RecAreaFeeDescription":"","RecAreaDirections":"Rocky
+        Mountain Arsenal NWR is 10 minutes from downtown Denver and 30 minutes from
+        the Rocky Mountain foothills.  It is located in Commerce City, Colorado, a
+        Denver suburb located in Adams County.  To get to Rocky Mountain Arsenal NWR
+        from downtown Denver, take I-25 north to I-70 east.  Exit at Havana Street
+        and head north.  Enter through the South Gate located at 56th Avenue and Havana
+        Street.  From Denver International Airport, take Pena Boulevard south to 56th
+        Avenue heading west.  Turn north on Havana Street and enter through the South
+        Gate.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.847,39.8345]},"RecAreaLongitude":-104.847,"RecAreaLatitude":39.8345,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2156","RecAreaID":"1583","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":8,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":10,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
+        CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]},{"RecAreaID":"306","OrgRecAreaID":"306","ParentOrgID":"130","RecAreaName":"Bear
+        Creek Lake","RecAreaDescription":"Bear Creek Dam, the last of three dams built
+        to protect the Denver region from floods, is located on the southwest edge
+        of suburban Lakewood at the confluence of Bear Creek and Turkey Creek.  This
+        project is known for its diverse bird and waterfowl population and its striking
+        scenic views.  Recreation opportunities include camping, horseback riding,
+        picnicking, hiking, boating, archery and nature study.","RecAreaFeeDescription":"","RecAreaDirections":"Located
+        just west of Denver near Morrison, on CO 8.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.128738,39.653304]},"RecAreaLongitude":-105.128738,"RecAreaLatitude":39.653304,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23","ORGANIZATION":[{"OrgID":"130","OrgName":"US
+        Army Corps of Engineers","OrgImageURL":"uasce.gif","OrgURLText":"","OrgURLAddress":"http://www.usace.army.mil","OrgType":"Federal
+        Agency","OrgAbbrevName":"USACE","OrgJurisdictionType":"State","OrgParentID":"162","LastUpdatedDate":"2018-06-26"}],"FACILITY":[{"FacilityID":"247879","FacilityName":"Bear
+        Creek Lake  City Park","ResourceLink":"https://ridb.recreation.gov/api/v1/facilities/247879"}],"RECAREAADDRESS":[{"RecAreaAddressID":"465508","RecAreaID":"306","RecAreaAddressType":"Default","RecAreaStreetAddress1":"9307
+        S. Wadsworth Blvd","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Littleton","PostalCode":"80128-6901","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2015-06-30"}],"ACTIVITY":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"306","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"306","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HORSEBACK
+        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"306","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""},{"ActivityID":44,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HOTEL/LODGE/RESORT
+        PRIVATELY OWNED","RecAreaActivityDescription":"Lodging","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"8e329fae748ba519ea610decc953753c","LinkType":"Map","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Map","Description":"","URL":"http://www.nwo.usace.army.mil/Missions/DamandLakeProjects/TriLakesProjects/BearCreekDam.aspx"},{"EntityLinkID":"6122bafbf0eec4716e3cb8850512c16c","LinkType":"Official
+        Web Site","EntityID":"306","EntityType":"RecArea","Title":"Bear Creek Lake
+        Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G672285"},{"EntityLinkID":"0bfb0856091fce0e68cbbfd1ea3007f0","LinkType":"Other","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G672285"}],"MEDIA":[{"EntityMediaID":"326049","MediaType":"Image","EntityID":"306","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2138.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":3,"TOTAL_COUNT":3},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Mon, 28 Feb 2022 22:15:56 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=HIKING%20BIKING&full=true&latitude=39.7535446&limit=10&longitude=-104.9984831&radius=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - rec_api_key
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Mon, 28 Feb 2022 22:15:58 GMT
+      X-Amz-Apigw-Id:
+      - ORhwkFnUPHcFr3A=
+      X-Amzn-Trace-Id:
+      - Root=1-621d499d-3432988ded274e5670dc45d6;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - 6913f772-d6fa-49cc-9336-0d2fa35d235b
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 0d28f52eb67be276c7b30c203c1e5414.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - NruY3GedypuxMtskmsV3_na_M55aIRGKFlWgWsLCtjDCaDq2ONcE4Q==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"RecAreaID":"3266","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Two
+        Ponds National Wildlife Refuge","RecAreaDescription":"Two Ponds National Wildlife
+        Refuge (NWR) is located in Arvada, Colorado, a suburb of Denver. The Refuge
+        consists of approximately 72 acres, with 63 acres of upland habitat and 9
+        acres of wetlands. Refuge habitat supports over 100 different species of birds.
+        \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s primary goals
+        is to provide environmental education programs for urban school children.
+        Each year, hundreds of school children learn about wildlife and wetlands.
+        Two Ponds NWR is administered by staff from the Rocky Mountain Arsenal NWR.","RecAreaFeeDescription":"","RecAreaDirections":"Two
+        Ponds NWR is located on West 80th Avenue in Arvada between Wadsworth Avenue
+        and Kipling Avenue.  To get to Two Ponds NWR from downtown Denver, take I-25
+        north to Highway 36 west.  Exit at Federal Boulevard and head north to West
+        80th Avenue.  Refuge parking is located on 80th Avenue between Wadsworth Avenue
+        and Kipling Avenue.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.10606,39.83974]},"RecAreaLongitude":-105.10606,"RecAreaLatitude":39.83974,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2755","RecAreaID":"3266","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":10,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"08343725650580f8169f7a3e65d297e1","LinkType":"Official
+        Web Site","EntityID":"3266","EntityType":"RecArea","Title":"","Description":"","URL":"http://twoponds.fws.gov"}],"MEDIA":[]},{"RecAreaID":"1583","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Rocky
+        Mountain Arsenal National Wildlife Refuge","RecAreaDescription":"Rocky Mountain
+        Arsenal National Wildlife Refuge (NWR), located 10 minutes from downtown Denver,
+        is nearly 17,000 acres, making it one of the largest urban wildlife refuges
+        in the United States. It consists of open lakes, wetlands, prairie grasslands,
+        and woodlands. \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s
+        primary goals is to provide environmental education programs for urban school
+        children. Each year, thousands of visitors come to the Refuge to appreciate
+        its wildlife, view the scenic habitat, and learn about native prairie species.
+        The Arsenal has been called \"a significant habitat island for wildlife\"
+        and \"a place to renew the relationship with nature.\" Popular activities
+        include interpretative programs, environmental education, fishing, wildlife
+        observation, and photography.","RecAreaFeeDescription":"","RecAreaDirections":"Rocky
+        Mountain Arsenal NWR is 10 minutes from downtown Denver and 30 minutes from
+        the Rocky Mountain foothills.  It is located in Commerce City, Colorado, a
+        Denver suburb located in Adams County.  To get to Rocky Mountain Arsenal NWR
+        from downtown Denver, take I-25 north to I-70 east.  Exit at Havana Street
+        and head north.  Enter through the South Gate located at 56th Avenue and Havana
+        Street.  From Denver International Airport, take Pena Boulevard south to 56th
+        Avenue heading west.  Turn north on Havana Street and enter through the South
+        Gate.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.847,39.8345]},"RecAreaLongitude":-104.847,"RecAreaLatitude":39.8345,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2156","RecAreaID":"1583","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":8,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":10,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
+        CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]},{"RecAreaID":"306","OrgRecAreaID":"306","ParentOrgID":"130","RecAreaName":"Bear
+        Creek Lake","RecAreaDescription":"Bear Creek Dam, the last of three dams built
+        to protect the Denver region from floods, is located on the southwest edge
+        of suburban Lakewood at the confluence of Bear Creek and Turkey Creek.  This
+        project is known for its diverse bird and waterfowl population and its striking
+        scenic views.  Recreation opportunities include camping, horseback riding,
+        picnicking, hiking, boating, archery and nature study.","RecAreaFeeDescription":"","RecAreaDirections":"Located
+        just west of Denver near Morrison, on CO 8.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.128738,39.653304]},"RecAreaLongitude":-105.128738,"RecAreaLatitude":39.653304,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23","ORGANIZATION":[{"OrgID":"130","OrgName":"US
+        Army Corps of Engineers","OrgImageURL":"uasce.gif","OrgURLText":"","OrgURLAddress":"http://www.usace.army.mil","OrgType":"Federal
+        Agency","OrgAbbrevName":"USACE","OrgJurisdictionType":"State","OrgParentID":"162","LastUpdatedDate":"2018-06-26"}],"FACILITY":[{"FacilityID":"247879","FacilityName":"Bear
+        Creek Lake  City Park","ResourceLink":"https://ridb.recreation.gov/api/v1/facilities/247879"}],"RECAREAADDRESS":[{"RecAreaAddressID":"465508","RecAreaID":"306","RecAreaAddressType":"Default","RecAreaStreetAddress1":"9307
+        S. Wadsworth Blvd","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Littleton","PostalCode":"80128-6901","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2015-06-30"}],"ACTIVITY":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"306","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"306","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HORSEBACK
+        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"306","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""},{"ActivityID":44,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HOTEL/LODGE/RESORT
+        PRIVATELY OWNED","RecAreaActivityDescription":"Lodging","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"8e329fae748ba519ea610decc953753c","LinkType":"Map","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Map","Description":"","URL":"http://www.nwo.usace.army.mil/Missions/DamandLakeProjects/TriLakesProjects/BearCreekDam.aspx"},{"EntityLinkID":"6122bafbf0eec4716e3cb8850512c16c","LinkType":"Official
+        Web Site","EntityID":"306","EntityType":"RecArea","Title":"Bear Creek Lake
+        Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G672285"},{"EntityLinkID":"0bfb0856091fce0e68cbbfd1ea3007f0","LinkType":"Other","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G672285"}],"MEDIA":[{"EntityMediaID":"326049","MediaType":"Image","EntityID":"306","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2138.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":3,"TOTAL_COUNT":3},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Mon, 28 Feb 2022 22:15:58 GMT
+- request:
+    method: get
+    uri: https://ridb.recreation.gov/api/v1/recareas?activity%5B%5D=HIKING%20BIKING&full=true&latitude=39.7535446&limit=10&longitude=-104.9984831&radius=10
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Apikey:
+      - rec_api_key
+      User-Agent:
+      - Faraday v2.2.0
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Content-Type:
+      - application/json
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Server:
+      - Server
+      Date:
+      - Mon, 28 Feb 2022 22:16:00 GMT
+      X-Amz-Apigw-Id:
+      - ORhw1HOCvHcFs4Q=
+      X-Amzn-Trace-Id:
+      - Root=1-621d499e-637c5c70509aad8755a460f8;Sampled=0
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; always
+      Access-Control-Allow-Methods:
+      - "*"
+      Access-Control-Allow-Origin:
+      - "*"
+      Cache-Control:
+      - max_age=600,public,stale-if-error=3600
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Xss-Protection:
+      - 1; mode=block
+      Content-Security-Policy:
+      - 'child-src ''self'' blob:; connect-src https://www.google-analytics.com https://siteintercept.qualtrics.com
+        ''self''; default-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        ''self''; font-src https://manage-cdn.recreation.gov https://manage.recreation.gov
+        https://*.manage.recreation.gov https://use.fontawesome.com https://fonts.gstatic.com;
+        frame-src https://tagmanager.google.com https://www.googletagmanager.com ''self''
+        blob:; img-src https://cdn.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://recreation.gov
+        https://*.recreation.gov https://www.google-analytics.com ''self'' data:  blob:
+        ; media-src https://www.nps.gov https://youtu.be https://www.youtube.com ''self'';
+        object-src ''self'' blob: ; script-src https://ridb.recreation.gov https://manage-cdn.recreation.gov
+        https://manage.recreation.gov https://*.manage.recreation.gov https://www.google.com/recaptcha/
+        https://tagmanager.google.com https://www.googletagmanager.com https://www.google-analytics.com
+        https://*.gstatic.com https://mapbox.com https://*.mapbox.com https://cdn.ravenjs.com
+        https://recaptcha.net https://sentry.io https://siteintercept.qualtrics.com
+        https://*.siteintercept.qualtrics.com ''unsafe-eval'' ''unsafe-inline''; style-src
+        https://ridb.recreation.gov https://manage.recreation.gov https://*.manage.recreation.gov
+        https://manage-cdn.recreation.gov https://use.fontawesome.com https://tagmanager.google.com
+        https://fonts.googleapis.com https://*.mapbox.com https://mapbox.com ''unsafe-inline'';
+        worker-src ''self'' blob: ;'
+      X-Amzn-Requestid:
+      - a7a370eb-ff44-4d87-81d3-c2ed8cd16fab
+      Vary:
+      - Accept-Encoding
+      X-Cache:
+      - Miss from cloudfront
+      Via:
+      - 1.1 0d28f52eb67be276c7b30c203c1e5414.cloudfront.net (CloudFront)
+      X-Amz-Cf-Pop:
+      - DEN52-C1
+      X-Amz-Cf-Id:
+      - LzU8G1eReRw_mq4VoAPaCRAZtL8fQGgZKkZmpH4kMBt7wei8__GkTw==
+    body:
+      encoding: ASCII-8BIT
+      string: '{"RECDATA":[{"RecAreaID":"3266","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Two
+        Ponds National Wildlife Refuge","RecAreaDescription":"Two Ponds National Wildlife
+        Refuge (NWR) is located in Arvada, Colorado, a suburb of Denver. The Refuge
+        consists of approximately 72 acres, with 63 acres of upland habitat and 9
+        acres of wetlands. Refuge habitat supports over 100 different species of birds.
+        \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s primary goals
+        is to provide environmental education programs for urban school children.
+        Each year, hundreds of school children learn about wildlife and wetlands.
+        Two Ponds NWR is administered by staff from the Rocky Mountain Arsenal NWR.","RecAreaFeeDescription":"","RecAreaDirections":"Two
+        Ponds NWR is located on West 80th Avenue in Arvada between Wadsworth Avenue
+        and Kipling Avenue.  To get to Two Ponds NWR from downtown Denver, take I-25
+        north to Highway 36 west.  Exit at Federal Boulevard and head north to West
+        80th Avenue.  Refuge parking is located on 80th Avenue between Wadsworth Avenue
+        and Kipling Avenue.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.10606,39.83974]},"RecAreaLongitude":-105.10606,"RecAreaLatitude":39.83974,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2755","RecAreaID":"3266","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":10,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"3266","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"08343725650580f8169f7a3e65d297e1","LinkType":"Official
+        Web Site","EntityID":"3266","EntityType":"RecArea","Title":"","Description":"","URL":"http://twoponds.fws.gov"}],"MEDIA":[]},{"RecAreaID":"1583","OrgRecAreaID":"","ParentOrgID":"127","RecAreaName":"Rocky
+        Mountain Arsenal National Wildlife Refuge","RecAreaDescription":"Rocky Mountain
+        Arsenal National Wildlife Refuge (NWR), located 10 minutes from downtown Denver,
+        is nearly 17,000 acres, making it one of the largest urban wildlife refuges
+        in the United States. It consists of open lakes, wetlands, prairie grasslands,
+        and woodlands. \n\n\n\n\n\nDue to its proximity to Denver, one of the Refuge''s
+        primary goals is to provide environmental education programs for urban school
+        children. Each year, thousands of visitors come to the Refuge to appreciate
+        its wildlife, view the scenic habitat, and learn about native prairie species.
+        The Arsenal has been called \"a significant habitat island for wildlife\"
+        and \"a place to renew the relationship with nature.\" Popular activities
+        include interpretative programs, environmental education, fishing, wildlife
+        observation, and photography.","RecAreaFeeDescription":"","RecAreaDirections":"Rocky
+        Mountain Arsenal NWR is 10 minutes from downtown Denver and 30 minutes from
+        the Rocky Mountain foothills.  It is located in Commerce City, Colorado, a
+        Denver suburb located in Adams County.  To get to Rocky Mountain Arsenal NWR
+        from downtown Denver, take I-25 north to I-70 east.  Exit at Havana Street
+        and head north.  Enter through the South Gate located at 56th Avenue and Havana
+        Street.  From Denver International Airport, take Pena Boulevard south to 56th
+        Avenue heading west.  Turn north on Havana Street and enter through the South
+        Gate.","RecAreaPhone":"303-289-0232","RecAreaEmail":"rockymountainarsenal@fws.gov","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-104.847,39.8345]},"RecAreaLongitude":-104.847,"RecAreaLatitude":39.8345,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2020-12-09","ORGANIZATION":[{"OrgID":"127","OrgName":"Fish
+        and Wildlife Service","OrgImageURL":"fws.gif","OrgURLText":"","OrgURLAddress":"http://www.fws.gov","OrgType":"Federal
+        Agency","OrgAbbrevName":"FWS","OrgJurisdictionType":"State","OrgParentID":"139","LastUpdatedDate":"2018-06-26"}],"FACILITY":[],"RECAREAADDRESS":[{"RecAreaAddressID":"2156","RecAreaID":"1583","RecAreaAddressType":"Default","RecAreaStreetAddress1":"7200
+        Quebec Street Bldg 121","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Commerce
+        City","PostalCode":"80022","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2007-03-06"}],"ACTIVITY":[{"ActivityID":8,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HISTORIC
+        \u0026 CULTURAL SITE","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":10,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"INTERPRETIVE
+        PROGRAMS","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"FISHING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"HIKING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":24,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"VISITOR
+        CENTER","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"1583","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"9611d31747205cc50999c68c5a1bdab8","LinkType":"Official
+        Web Site","EntityID":"1583","EntityType":"RecArea","Title":"","Description":"","URL":"http://rockymountainarsenal.fws.gov"}],"MEDIA":[{"EntityMediaID":"5a633a2e-8fbd-4d5b-91d4-678958660258","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":525,"Width":700,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_460f1766-888d-4eea-9082-8e3d99c26b2e_700.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":false,"IsPreview":true,"IsGallery":false},{"EntityMediaID":"77f71eef-2c74-46e6-960f-3e2993cc8e4f","MediaType":"Image","EntityID":"1583","EntityType":"RecArea","Title":"Rocky
+        Mountain Arsenal National Wildlife Refuge","Subtitle":"","Description":"Rocky
+        Mountain Arsenal National Wildlife Refuge","EmbedCode":"","Height":340,"Width":1440,"URL":"https://cdn.recreation.gov/public/2018/09/14/09/56/1583_0f866aa1-4aff-4568-9292-25f29db7d712_1440.jpg","Credits":"John
+        Carr - USFWS","IsPrimary":true,"IsPreview":false,"IsGallery":false}]},{"RecAreaID":"306","OrgRecAreaID":"306","ParentOrgID":"130","RecAreaName":"Bear
+        Creek Lake","RecAreaDescription":"Bear Creek Dam, the last of three dams built
+        to protect the Denver region from floods, is located on the southwest edge
+        of suburban Lakewood at the confluence of Bear Creek and Turkey Creek.  This
+        project is known for its diverse bird and waterfowl population and its striking
+        scenic views.  Recreation opportunities include camping, horseback riding,
+        picnicking, hiking, boating, archery and nature study.","RecAreaFeeDescription":"","RecAreaDirections":"Located
+        just west of Denver near Morrison, on CO 8.","RecAreaPhone":"","RecAreaEmail":"","RecAreaReservationURL":"","RecAreaMapURL":"","GEOJSON":{"TYPE":"Point","COORDINATES":[-105.128738,39.653304]},"RecAreaLongitude":-105.128738,"RecAreaLatitude":39.653304,"StayLimit":"","Keywords":"","Reservable":false,"Enabled":true,"LastUpdatedDate":"2021-09-23","ORGANIZATION":[{"OrgID":"130","OrgName":"US
+        Army Corps of Engineers","OrgImageURL":"uasce.gif","OrgURLText":"","OrgURLAddress":"http://www.usace.army.mil","OrgType":"Federal
+        Agency","OrgAbbrevName":"USACE","OrgJurisdictionType":"State","OrgParentID":"162","LastUpdatedDate":"2018-06-26"}],"FACILITY":[{"FacilityID":"247879","FacilityName":"Bear
+        Creek Lake  City Park","ResourceLink":"https://ridb.recreation.gov/api/v1/facilities/247879"}],"RECAREAADDRESS":[{"RecAreaAddressID":"465508","RecAreaID":"306","RecAreaAddressType":"Default","RecAreaStreetAddress1":"9307
+        S. Wadsworth Blvd","RecAreaStreetAddress2":"","RecAreaStreetAddress3":"","City":"Littleton","PostalCode":"80128-6901","AddressStateCode":"CO","AddressCountryCode":"USA","LastUpdatedDate":"2015-06-30"}],"ACTIVITY":[{"ActivityID":5,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BIKING","RecAreaActivityDescription":"Biking","RecAreaActivityFeeDescription":""},{"ActivityID":6,"ActivityParentID":"","RecAreaID":"306","ActivityName":"BOATING","RecAreaActivityDescription":"Boating","RecAreaActivityFeeDescription":""},{"ActivityID":9,"ActivityParentID":"","RecAreaID":"306","ActivityName":"CAMPING","RecAreaActivityDescription":"Camping","RecAreaActivityFeeDescription":""},{"ActivityID":11,"ActivityParentID":"","RecAreaID":"306","ActivityName":"FISHING","RecAreaActivityDescription":"Fishing","RecAreaActivityFeeDescription":""},{"ActivityID":14,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HIKING","RecAreaActivityDescription":"Hiking","RecAreaActivityFeeDescription":""},{"ActivityID":15,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HORSEBACK
+        RIDING","RecAreaActivityDescription":"Horseback Riding","RecAreaActivityFeeDescription":""},{"ActivityID":20,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PICNICKING","RecAreaActivityDescription":"Picnic","RecAreaActivityFeeDescription":""},{"ActivityID":25,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WATER
+        SPORTS","RecAreaActivityDescription":"Water Sports","RecAreaActivityFeeDescription":""},{"ActivityID":26,"ActivityParentID":"","RecAreaID":"306","ActivityName":"WILDLIFE
+        VIEWING","RecAreaActivityDescription":"Wildlife Viewing","RecAreaActivityFeeDescription":""},{"ActivityID":37,"ActivityParentID":"","RecAreaID":"306","ActivityName":"PLAYGROUND
+        PARK SPECIALIZED SPORT SITE","RecAreaActivityDescription":"Playground","RecAreaActivityFeeDescription":""},{"ActivityID":38,"ActivityParentID":"","RecAreaID":"306","ActivityName":"OTHER
+        RECREATION CONCESSION SITE","RecAreaActivityDescription":"Restaurant/SnackBar","RecAreaActivityFeeDescription":""},{"ActivityID":44,"ActivityParentID":"","RecAreaID":"306","ActivityName":"HOTEL/LODGE/RESORT
+        PRIVATELY OWNED","RecAreaActivityDescription":"Lodging","RecAreaActivityFeeDescription":""}],"EVENT":[],"LINK":[{"EntityLinkID":"8e329fae748ba519ea610decc953753c","LinkType":"Map","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Map","Description":"","URL":"http://www.nwo.usace.army.mil/Missions/DamandLakeProjects/TriLakesProjects/BearCreekDam.aspx"},{"EntityLinkID":"6122bafbf0eec4716e3cb8850512c16c","LinkType":"Official
+        Web Site","EntityID":"306","EntityType":"RecArea","Title":"Bear Creek Lake
+        Website","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/projects.cfm?ID=G672285"},{"EntityLinkID":"0bfb0856091fce0e68cbbfd1ea3007f0","LinkType":"Other","EntityID":"306","EntityType":"RecArea","Title":"Bear
+        Creek Lake Photo Album","Description":"","URL":"https://corpsLakes.erdc.dren.mil/visitors/album.cfm?Option=View\u0026Activity=None\u0026ID=G672285"}],"MEDIA":[{"EntityMediaID":"326049","MediaType":"Image","EntityID":"306","EntityType":"RecArea","Title":"","Subtitle":"","Description":"","EmbedCode":"","Height":295,"Width":480,"URL":"https://cdn.recreation.gov/public/images/2138.jpg","Credits":"","IsPrimary":false,"IsPreview":false,"IsGallery":true}]}],"METADATA":{"RESULTS":{"CURRENT_COUNT":3,"TOTAL_COUNT":3},"SEARCH_PARAMETERS":{"QUERY":"","LIMIT":10,"OFFSET":0}}}'
+  recorded_at: Mon, 28 Feb 2022 22:15:59 GMT
+recorded_with: VCR 6.0.0

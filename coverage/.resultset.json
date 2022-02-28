@@ -57,10 +57,88 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/services/recreation_service.rb": {
+        "lines": [
+          1,
+          1,
+          4,
+          null,
+          null,
+          null,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null,
+          4,
+          null,
+          null
+        ]
+      },
+      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/models/custom_rec_area.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/controllers/api/v1/users_controller.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/controllers/application_controller.rb": {
+        "lines": [
+          1,
+          null
+        ]
+      },
+      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
+      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/controllers/welcome_controller.rb": {
+        "lines": [
+          1,
+          1,
           null,
           null
         ]
@@ -75,95 +153,8 @@
         "branches": {
         }
       },
-      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/models/custom_rec_area.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/serializers/user_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/jobs/application_job.rb": {
         "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/controllers/welcome_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/controllers/api/v1/users_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/kerrihoffmann/turing/3module/projects/stoke-finder-backend/app/services/recreation_service.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          null,
-          0,
-          0,
           0,
           0
         ],
@@ -191,6 +182,6 @@
         }
       }
     },
-    "timestamp": 1646080734
+    "timestamp": 1646087226
   }
 }
