@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   root to: 'welcome#welcome'
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:show]
+      resources :users, only: [:show, :create]
     end
   end
 end

@@ -37,10 +37,8 @@ group :development, :test do
   gem 'rubocop-rails'
   gem 'figaro'
   gem 'factory_bot_rails'
-  gem 'geocoder'
   gem 'rspec_junit_formatter'
   gem 'faker'
-
 end
 
 group :test do
