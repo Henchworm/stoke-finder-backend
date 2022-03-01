@@ -6,19 +6,24 @@
           1,
           null,
           1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
           null,
           null,
           1,
           1,
-          1,
-          1,
-          1,
-          1,
+          0,
+          0,
+          0,
+          0,
           null,
           0,
+          null,
+          null,
+          null,
+          null,
+          null,
           null,
           null,
           null,
@@ -49,7 +54,7 @@
         "lines": [
           1,
           1,
-          1,
+          0,
           null,
           null
         ]
@@ -79,10 +84,10 @@
           null,
           null,
           1,
-          2,
-          2,
-          2,
-          2,
+          0,
+          0,
+          0,
+          0,
           null,
           null
         ]
@@ -91,32 +96,6 @@
         "lines": [
           1,
           1,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/user_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/controllers/welcome_controller.rb": {
-        "lines": [
-          1,
-          1,
-          null,
           null
         ]
       },
@@ -172,8 +151,38 @@
         "branches": {
         }
       },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/user_serializer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/jobs/application_job.rb": {
         "lines": [
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/controllers/welcome_controller.rb": {
+        "lines": [
+          0,
+          0,
           0,
           0
         ],
@@ -201,6 +210,6 @@
         }
       }
     },
-    "timestamp": 1646102156
+    "timestamp": 1646104847
   }
 }
