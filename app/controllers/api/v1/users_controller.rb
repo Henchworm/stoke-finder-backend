@@ -7,7 +7,6 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    # binding.pry
     non_auth_user_params = JSON.parse(request.raw_post)
     user = User.new(non_auth_user_params)
     if user.save
