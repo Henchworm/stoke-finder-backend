@@ -7,7 +7,7 @@ RSpec.describe 'Creating a user' do
 
         user_params =  {
         user_name: "BobBarker123",
-        email: "email@faker.net",
+        email: "bobby@faker.net",
         password: "Guest",
         password_confirmation: "Guest",
         access: 0,
