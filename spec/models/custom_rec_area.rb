@@ -41,7 +41,7 @@ RSpec.describe CustomRecArea, type: :model do
   describe "creation" do
     it "creates a custom_rec_area" do
       custom_rec_area_1 = FactoryBot.create(:custom_rec_area)
-      
+
       expect(custom_rec_area_1.name).to be_a(String)
       expect(custom_rec_area_1.longitude).to be_a(String)
       expect(custom_rec_area_1.latitude).to be_a(String)
