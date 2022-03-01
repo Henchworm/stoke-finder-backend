@@ -2,12 +2,45 @@ require 'rails_helper'
 
 RSpec.describe Adventure, type: :model do
   describe 'validations' do
-    it { should validate_presence_of(:guest_email_addresses) }
-    it { should validate_presence_of(:date) }
-    it { should validate_presence_of(:comment) }
-    it { should validate_presence_of(:activities) }
-    it { should validate_presence_of(:favorite) }
-    it { should validate_presence_of(:rec_area_id) }
+    describe '#guest_email_addresses' do
+      it { should validate_presence_of :guest_email_addresses }
+      it { should_not allow_value(nil).for(:guest_email_addresses) }
+    end
+
+    describe '#date' do
+      it { should validate_presence_of :date }
+      it { should_not allow_value(nil).for(:date) }
+      it { should_not allow_value("abcd").for(:date) }
+      it { should_not allow_value("5").for(:date) }
+    end
+
+    describe '#comment' do
+      it { should validate_presence_of :comment }
+      it { should_not allow_value(nil).for(:comment) }
+      it { should allow_value("abcd").for(:comment) }
+      it { should allow_value("5").for(:comment) }
+    end
+
+    describe '#activities' do
+      it { should validate_presence_of :activities }
+      it { should_not allow_value(nil).for(:activities) }
+      it { should allow_value("abcd").for(:activities) }
+      it { should allow_value("5").for(:activities) }
+    end
+
+    describe '#favorite' do
+      it { should validate_presence_of :favorite }
+      it { should_not allow_value(nil).for(:favorite) }
+      it { should allow_value("abcd").for(:favorite) }
+      it { should allow_value("5").for(:favorite) }
+    end
+
+    describe '#rec_area_id' do
+      it { should validate_presence_of :rec_area_id }
+      it { should_not allow_value(nil).for(:rec_area_id) }
+      it { should allow_value("abcd").for(:rec_area_id) }
+      it { should allow_value("5").for(:rec_area_id) }
+    end
   end
 
   describe 'relationships' do
