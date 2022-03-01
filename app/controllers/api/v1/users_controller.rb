@@ -29,6 +29,12 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
+  def destroy
+    id = JSON.parse(request.raw_post)
+    User.find(id).delete
+    render json: {message: "Account successfully deleted.", status: 200}
+  end
+
   private
   def non_auth_user_params
     params["user"]["activity_preferences"] = params["user"]["activity_preferences"].join(" ")

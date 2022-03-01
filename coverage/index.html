@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-01T16:09:55-07:00">2022-03-01T16:09:55-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-03-01T16:54:33-07:00">2022-03-01T16:54:33-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,7 +23,7 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="red">
-  77.91%
+  78.89%
 </span>
 
      </span>
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>86</b> relevant lines,
-    <span class="green"><b>67</b> lines covered</span> and
+    <b>90</b> relevant lines,
+    <span class="green"><b>71</b> lines covered</span> and
     <span class="red"><b>19</b> lines missed. </span>
     (<span class="red">
-  77.91%
+  78.89%
 </span>
 )
   </div>
@@ -94,12 +94,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0f3006da937200a1c2d060ca32b92c9a45150ad6" class="src_link" title="app/controllers/api/v1/users_controller.rb">app/controllers/api/v1/users_controller.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">80.77 %</td>
-            <td class="cell--number">41</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">21</td>
+            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="cell--number">47</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">0.81</td>
+            <td class="cell--number">0.83</td>
             
           </tr>
         
@@ -236,14 +236,14 @@
     <span class="group_name">Controllers</span>
     (<span class="covered_percent">
       <span class="yellow">
-  84.85%
+  86.49%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="red">
-         0.88
+         0.89
        </span>
     </span> hits/line
     )
@@ -256,11 +256,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>33</b> relevant lines,
-    <span class="green"><b>28</b> lines covered</span> and
+    <b>37</b> relevant lines,
+    <span class="green"><b>32</b> lines covered</span> and
     <span class="red"><b>5</b> lines missed. </span>
     (<span class="yellow">
-  84.85%
+  86.49%
 </span>
 )
   </div>
@@ -285,12 +285,12 @@
         
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#0f3006da937200a1c2d060ca32b92c9a45150ad6" class="src_link" title="app/controllers/api/v1/users_controller.rb">app/controllers/api/v1/users_controller.rb</a></td>
-            <td class="yellow strong cell--number t-file__coverage">80.77 %</td>
-            <td class="cell--number">41</td>
-            <td class="cell--number">26</td>
-            <td class="cell--number">21</td>
+            <td class="yellow strong cell--number t-file__coverage">83.33 %</td>
+            <td class="cell--number">47</td>
+            <td class="cell--number">30</td>
+            <td class="cell--number">25</td>
             <td class="cell--number">5</td>
-            <td class="cell--number">0.81</td>
+            <td class="cell--number">0.83</td>
             
           </tr>
         
@@ -1014,7 +1014,7 @@
     <h3>app/controllers/api/v1/users_controller.rb</h3>
     <h4>
       <span class="yellow">
-  80.77%
+  83.33%
 </span>
 
       lines covered
@@ -1023,8 +1023,8 @@
     
 
     <div class="t-line-summary">
-      <b>26</b> relevant lines.
-      <span class="green"><b>21</b> lines covered</span> and
+      <b>30</b> relevant lines.
+      <span class="green"><b>25</b> lines covered</span> and
       <span class="red"><b>5</b> lines missed.</span>
     </div>
 
@@ -1383,7 +1383,7 @@
 
             
 
-            <code class="ruby">  private</code>
+            <code class="ruby">  def destroy</code>
           </li>
         </div>
       
@@ -1394,29 +1394,29 @@
 
             
 
-            <code class="ruby">  def non_auth_user_params</code>
+            <code class="ruby">    id = JSON.parse(request.raw_post)</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="34">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="34">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    params[&quot;user&quot;][&quot;activity_preferences&quot;] = params[&quot;user&quot;][&quot;activity_preferences&quot;].join(&quot; &quot;)</code>
+            
+
+            <code class="ruby">    User.find(id).delete</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="35">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="35">
+            <span class="hits">1</span>
             
 
-            <code class="ruby">    params.require(:user).permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)</code>
+            
+
+            <code class="ruby">    render json: {message: &quot;Account successfully deleted.&quot;, status: 200}</code>
           </li>
         </div>
       
@@ -1449,23 +1449,45 @@
 
             
 
-            <code class="ruby">  def outh_user</code>
+            <code class="ruby">  private</code>
           </li>
         </div>
       
         <div>
-          <li class="missed" data-hits="0" data-linenumber="39">
+          <li class="covered" data-hits="1" data-linenumber="39">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def non_auth_user_params</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="40">
             
             
 
             
 
-            <code class="ruby">    dlfkjsldkfjs</code>
+            <code class="ruby">    params[&quot;user&quot;][&quot;activity_preferences&quot;] = params[&quot;user&quot;][&quot;activity_preferences&quot;].join(&quot; &quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="40">
+          <li class="missed" data-hits="0" data-linenumber="41">
+            
+            
+
+            
+
+            <code class="ruby">    params.require(:user).permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="42">
             
             
 
@@ -1476,7 +1498,51 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="41">
+          <li class="never" data-hits="" data-linenumber="43">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def outh_user</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="missed" data-hits="0" data-linenumber="45">
+            
+            
+
+            
+
+            <code class="ruby">    dlfkjsldkfjs</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="46">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="47">
             
             
 
