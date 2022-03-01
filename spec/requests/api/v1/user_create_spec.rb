@@ -23,7 +23,6 @@ RSpec.describe 'Creating a user' do
         post "/api/v1/users", headers: headers, params: user_params, as: :json
         expect(response).to be_successful
         expect(User.last[:user_name]).to eq("BobBarker123")
-
       end
     end
   end
