@@ -10,10 +10,10 @@ class Api::V1::UsersController < ApplicationController
     user = User.create!(non_auth_user_params)
     if user.save
       user.add_coordinates
-      json_response(UserSerializer(user), :created)
+      json_response(UserSerializer.new(user), :created)
     else
       render json: { status: 'ERROR', message: "#{user.errors.to_sentence}", data: user.errors}, status: :bad_request
-    end 
+    end
     #add_coordinates will need to happen here
     #Conditional for Oauth user or non-oauth
     #if oauth
