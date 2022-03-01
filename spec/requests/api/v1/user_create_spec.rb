@@ -5,7 +5,7 @@ RSpec.describe 'Creating a user' do
     context 'happy path' do
       it 'creates a user when given correct data', :vcr do
 
-        user_params =({
+        user_params =  {
         user_name: "BobBarker123",
         email: "email@faker.net",
         password: "Guest",
@@ -16,11 +16,14 @@ RSpec.describe 'Creating a user' do
         state: "CO",
         zipcode: "80120",
         activity_preferences: ["HIKING", "BIKING", "CAMPING"]
-        })
+        }
+        headers = { "CONTENT_TYPE" => "application/json" }
 
-        headers = {"CONTENT_TYPE" => "application/json"}
 
-        post api_v1_users_path, headers: headers, params: JSON.generate(user: user_params)
+        post "/api/v1/users", headers: headers, params: user_params, as: :json
+        expect(response).to be_successful
+        expect(User.last[:user_name]).to eq("BobBarker123")
+
       end
     end
   end
