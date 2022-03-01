@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=19072%20Ave%20300,%20Exeter,%20California
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Tue, 01 Mar 2022 21:47:32 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI5NzQ2NTU5MSwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjEwNjc5NTMyLCJib3VuZGluZ2JveCI6WyIzNi4yNjgyOTk1MDcxMjgiLCIzNi4yNjgzOTk1MDcxMjgiLCItMTE5LjE1MDE1MjUwOTQiLCItMTE5LjE1MDA1MjUwOTQiXSwibGF0IjoiMzYuMjY4MzQ5NTA3MTI4IiwibG9uIjoiLTExOS4xNTAxMDI1MDkzOTUyMSIsImRpc3BsYXlfbmFtZSI6IjE5MDcyLCBBdmVudWUgMjY0LCBFeGV0ZXIsIFR1bGFyZSBDb3VudHksIENhbGlmb3JuaWEsIDkzMjIxLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsImltcG9ydGFuY2UiOjAuNDMxLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjE5MDcyIiwicm9hZCI6IkF2ZW51ZSAyNjQiLCJ0b3duIjoiRXhldGVyIiwiY291bnR5IjoiVHVsYXJlIENvdW50eSIsInN0YXRlIjoiQ2FsaWZvcm5pYSIsInBvc3Rjb2RlIjoiOTMyMjEiLCJjb3VudHJ5IjoiVW5pdGVkIFN0YXRlcyIsImNvdW50cnlfY29kZSI6InVzIn19XQ==
+  recorded_at: Tue, 01 Mar 2022 21:47:32 GMT
+recorded_with: VCR 6.0.0

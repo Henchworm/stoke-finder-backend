@@ -15,7 +15,7 @@ RSpec.describe "updating a user" do
       activity_preferences: ["HIKING", "BIKING", "CAMPING"]
       )
     new_user_params =  {
-    id: 7777777,
+    id: "7777777",
     user_name: "Hobgoblin34",
     email: "email@goblin.net",
     password: "Guest",
@@ -25,10 +25,9 @@ RSpec.describe "updating a user" do
     city: "Littleton",
     state: "CO",
     zipcode: "80120",
-    activity_preferences: ["HIKING", "BIKING", "CAMPING"]
+    activity_preferences: "HIKING, BIKING, CAMPING"
     }
     headers = { "CONTENT_TYPE" => "application/json" }
-
 
     patch "/api/v1/users/#{user_1.id}", headers: headers, params: new_user_params, as: :json
     expect(response).to be_successful
