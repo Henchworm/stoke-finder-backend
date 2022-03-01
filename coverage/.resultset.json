@@ -13,21 +13,24 @@
           null,
           1,
           1,
+          1,
+          1,
           0,
           0,
-          0,
-          0,
           null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
+          1,
           null,
           null,
           null,
           1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          0,
           null,
           null,
           null,
@@ -54,7 +57,7 @@
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
           null
         ]
@@ -84,10 +87,10 @@
           null,
           null,
           1,
-          0,
-          0,
-          0,
-          0,
+          1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -96,6 +99,24 @@
         "lines": [
           1,
           1,
+          null
+        ]
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/user_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null,
           null
         ]
       },
@@ -151,26 +172,6 @@
         "branches": {
         }
       },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/user_serializer.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/jobs/application_job.rb": {
         "lines": [
           0,
@@ -210,6 +211,6 @@
         }
       }
     },
-    "timestamp": 1646104847
+    "timestamp": 1646164715
   }
 }

@@ -1,9 +1,9 @@
 class Api::V1::UsersController < ApplicationController
 
   def show
-  user = User.find(params[:id])
-  user.add_coordinates
-  render(json: UserSerializer.new(user))
+    user = User.find(params[:id])
+    user.add_coordinates
+    render(json: UserSerializer.new(user))
   end
 
   def create
@@ -17,8 +17,16 @@ class Api::V1::UsersController < ApplicationController
     end
   end
 
-  def edit
-
+  def update
+    non_auth_user_params = JSON.parse(request.raw_post)
+    user = User.find(non_auth_user_params["id"])
+    user.update(non_auth_user_params)
+    if user.save
+      user.add_coordinates
+      json_response(UserSerializer.new(user), :created)
+    else
+      render json: { status: 'ERROR', message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
+    end
   end
 
   private
