@@ -33,8 +33,8 @@ RSpec.describe "updating a user" do
       }
       headers = { "CONTENT_TYPE" => "application/json" }
 
-
       patch "/api/v1/users/#{@user_1.id}", headers: headers, params: new_user_params, as: :json
+
       expect(response).to be_successful
       expect(User.last[:user_name]).to eq("Hobgoblin34")
     end
