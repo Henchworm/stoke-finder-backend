@@ -8,7 +8,7 @@
 
 ## Description 
 
-Stoke Finder BE is the backend application of the Stoke Finder project. Stoke Finder is an application designed to aid users in the creation, and discovery of new outdoor adventures based on outdoor activities the user adds to their profile preferences. The purpose is to handle the consumption and creation of API's necessary for populating views in the rails application, authenticate user login/creation through the application of OAUTH, demonstrate convetional means of packaging, sending, and receiving JSON responses to and from the BE server, and creating a user friendly interface with styling successfully implemented. Storage of the user creation, will be stored on the backend, and packaged for the FE through the API end point that is created on the BE application. 
+Stoke Finder BE is the backend application of the Stoke Finder project. Stoke Finder is an application designed to aid users in the creation, and discovery of new outdoor adventures based on outdoor activities the user adds to their profile preferences. The purpose is to handle the consumption and creation of API's necessary for massaging and passing data to the FE application in the Stoke Finder, properly handling user authenitcation data that is passed to the BE, and demonstrating convetional means of packaging, sending, and receiving JSON responses to and from the FE server. The storage of all sensitive data that cannot be accessed through an API consumption on the FE, will be stored in the backend database. This data will be accessible for the FE through the API end points that are created on the BE application. 
 
 ## Versions
 - Ruby 2.7.2
