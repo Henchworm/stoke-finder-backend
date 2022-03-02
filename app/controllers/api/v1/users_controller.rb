@@ -8,6 +8,7 @@ class Api::V1::UsersController < ApplicationController
 
   def create
     non_auth_user_params = JSON.parse(request.raw_post)
+    binding.pry
     user = User.new(non_auth_user_params)
     if user.save
       user.add_coordinates

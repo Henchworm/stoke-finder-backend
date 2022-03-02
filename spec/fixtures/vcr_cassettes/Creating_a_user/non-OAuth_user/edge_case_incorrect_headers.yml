@@ -1,0 +1,42 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://nominatim.openstreetmap.org/search?accept-language=en&addressdetails=1&format=json&q=2484%20Houstoun%20Waring%20Cir,%20Littleton,%20CO
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 02 Mar 2022 17:44:54 GMT
+      Content-Type:
+      - application/json; charset=UTF-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Keep-Alive:
+      - timeout=20
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Methods:
+      - OPTIONS,GET
+    body:
+      encoding: ASCII-8BIT
+      string: !binary |-
+        W3sicGxhY2VfaWQiOjI0NjAxMzU5MCwibGljZW5jZSI6IkRhdGEgwqkgT3BlblN0cmVldE1hcCBjb250cmlidXRvcnMsIE9EYkwgMS4wLiBodHRwczovL29zbS5vcmcvY29weXJpZ2h0Iiwib3NtX3R5cGUiOiJ3YXkiLCJvc21faWQiOjczMDE4NDAyNywiYm91bmRpbmdib3giOlsiMzkuNTg3MTgxNSIsIjM5LjU4NzM2MjQiLCItMTA1LjAxOTE1MzMiLCItMTA1LjAxODkxMjgiXSwibGF0IjoiMzkuNTg3MjczNzUiLCJsb24iOiItMTA1LjAxOTAzOTc4ODkxNzA3IiwiZGlzcGxheV9uYW1lIjoiMjQ4NCwgV2VzdCBIb3VzdG91biBXYXJpbmcgQ2lyY2xlLCBMaXR0bGV0b24sIEFyYXBhaG9lIENvdW50eSwgQ29sb3JhZG8sIDgwMTIwLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJidWlsZGluZyIsInR5cGUiOiJob3VzZSIsImltcG9ydGFuY2UiOjAuNjIxLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjI0ODQiLCJyb2FkIjoiV2VzdCBIb3VzdG91biBXYXJpbmcgQ2lyY2xlIiwiY2l0eSI6IkxpdHRsZXRvbiIsImNvdW50eSI6IkFyYXBhaG9lIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJwb3N0Y29kZSI6IjgwMTIwIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fSx7InBsYWNlX2lkIjoyOTUwNTU2OTksImxpY2VuY2UiOiJEYXRhIMKpIE9wZW5TdHJlZXRNYXAgY29udHJpYnV0b3JzLCBPRGJMIDEuMC4gaHR0cHM6Ly9vc20ub3JnL2NvcHlyaWdodCIsIm9zbV90eXBlIjoid2F5Iiwib3NtX2lkIjoxNjk5MDgyNiwiYm91bmRpbmdib3giOlsiMzkuNTg2ODY3MDA0MDU5IiwiMzkuNTg2OTY3MDA0MDU5IiwiLTEwNS4wMTgzMzE4ODA5MiIsIi0xMDUuMDE4MjMxODgwOTIiXSwibGF0IjoiMzkuNTg2OTE3MDA0MDU4NjEiLCJsb24iOiItMTA1LjAxODI4MTg4MDkxODgyIiwiZGlzcGxheV9uYW1lIjoiMjQ4NCwgV2VzdCBIb3VzdG91biBXYXJpbmcgQ2lyY2xlLCBMaXR0bGV0b24sIEFyYXBhaG9lIENvdW50eSwgQ29sb3JhZG8sIDgwMTIwLCBVbml0ZWQgU3RhdGVzIiwiY2xhc3MiOiJwbGFjZSIsInR5cGUiOiJob3VzZSIsImltcG9ydGFuY2UiOjAuNjIxLCJhZGRyZXNzIjp7ImhvdXNlX251bWJlciI6IjI0ODQiLCJyb2FkIjoiV2VzdCBIb3VzdG91biBXYXJpbmcgQ2lyY2xlIiwiY2l0eSI6IkxpdHRsZXRvbiIsImNvdW50eSI6IkFyYXBhaG9lIENvdW50eSIsInN0YXRlIjoiQ29sb3JhZG8iLCJwb3N0Y29kZSI6IjgwMTIwIiwiY291bnRyeSI6IlVuaXRlZCBTdGF0ZXMiLCJjb3VudHJ5X2NvZGUiOiJ1cyJ9fV0=
+  recorded_at: Wed, 02 Mar 2022 17:44:54 GMT
+recorded_with: VCR 6.0.0
