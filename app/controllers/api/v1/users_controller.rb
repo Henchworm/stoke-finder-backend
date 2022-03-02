@@ -13,7 +13,7 @@ class Api::V1::UsersController < ApplicationController
       user.add_coordinates
       json_response(UserSerializer.new(user), :created)
     else
-      render json: { status: 'ERROR', message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
+      render json: { status: 400, message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
     end
   end
 
@@ -23,9 +23,9 @@ class Api::V1::UsersController < ApplicationController
     user.update(non_auth_user_params)
     if user.save
       user.add_coordinates
-      json_response(UserSerializer.new(user), :created)
+      json_response(UserSerializer.new(user))
     else
-      render json: { status: 'ERROR', message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
+      render json: { status: 404, message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
     end
   end
 
