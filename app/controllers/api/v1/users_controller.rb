@@ -30,8 +30,7 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def destroy
-    id = JSON.parse(request.raw_post)
-    User.find(id).delete
+    User.find(params[:id]).delete
     render json: {message: "Account successfully deleted.", status: 200}
   end
 

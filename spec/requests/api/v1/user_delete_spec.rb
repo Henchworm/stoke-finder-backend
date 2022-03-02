@@ -14,7 +14,9 @@ RSpec.describe "user delete" do
       zipcode: "80120",
       activity_preferences: ["HIKING", "BIKING", "CAMPING"]
       )
-      delete  "/api/v1/users/#{user_1.id}", headers: headers, params: user_1.id, as: :json
+      headers = { "CONTENT_TYPE" => "application/json" }
+
+      delete  "/api/v1/users/#{user_1.id}"
       expect(response).to be_successful
       parsed = JSON.parse(response.body, symbolize_names: true)
       expect(parsed[:message]).to eq('Account successfully deleted.')
