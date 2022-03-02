@@ -76,6 +76,7 @@ RSpec.describe 'Creating a user' do
 
       expect(response).to be_successful
       expect(response.status).to eq(201)
+
     end
   end
 end
