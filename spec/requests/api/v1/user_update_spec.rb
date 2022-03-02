@@ -85,12 +85,29 @@ RSpec.describe "updating a user" do
 
     it "edge case: Invalid user id", :vcr do
       non_user_id = 100000000000000
-      new_user_params = create(:user, password: "Guest", password_confirmation: "Guest",)
+      new_user_params = create(:user, password: "Guest", password_confirmation: "Guest")
 
       headers = { "CONTENT_TYPE" => "application/json" }
       patch "/api/v1/users/#{non_user_id}", headers: headers, params: new_user_params, as: :json
+
       expect(response).to_not be_successful
       expect(response.status).to eq(400)
+
+      return_value = JSON.parse(response.body, symbolize_names: true)
+      expect(return_value[:message]).to eq("User ID does not match a current user.")
+    end
+
+    it "edge case: String user id", :vcr do
+      new_user_params = create(:user, password: "Guest", password_confirmation: "Guest")
+
+      headers = { "CONTENT_TYPE" => "application/json" }
+      patch "/api/v1/users/aasd", headers: headers, params: new_user_params, as: :json
+
+      expect(response).to_not be_successful
+      expect(response.status).to eq(400)
+
+      return_value = JSON.parse(response.body, symbolize_names: true)
+      expect(return_value[:message]).to eq("User ID does not match a current user.")
     end
   end
 end
