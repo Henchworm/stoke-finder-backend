@@ -8,7 +8,8 @@ class User < ApplicationRecord
   validates :user_name,
             :presence => {message: "can't be blank"},
             :uniqueness => true
-  validates :email, format: { with: URI::MailTo::EMAIL_REGEXP },
+  validates :email,
+            :format => { with: URI::MailTo::EMAIL_REGEXP },
             :presence => {message: "can't be blank"},
             :uniqueness => true
   validates :password_digest,
