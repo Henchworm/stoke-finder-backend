@@ -1,4 +1,4 @@
-# Stoke Finder FE
+# Stoke Finder BE
 
 ![languages](https://img.shields.io/github/languages/top/stoke-finder-2110/stoke-finder-backend?color=red)
 ![rspec](https://img.shields.io/gem/v/rspec?color=blue&label=rspec)
@@ -8,7 +8,7 @@
 
 ## Description 
 
-Stoke Finder FE is the frontend application of the Stoke Finder project. Stoke Finder is an application designed to aid users in the creation, and discovery of new outdoor adventures based on outdoor activities the user adds to their profile preferences. The purpose is to handle the consumption of API's necessary for populating views in the rails application, authenticate user login/creation through the application of OAUTH, demonstrate convetional means of packaging, sending, and receiving JSON responses to and from the BE server, and creating a user friendly interface with styling successfully implemented.
+Stoke Finder BE is the backend application of the Stoke Finder project. Stoke Finder is an application designed to aid users in the creation, and discovery of new outdoor adventures based on outdoor activities the user adds to their profile preferences. The purpose is to handle the consumption and creation of API's necessary for populating views in the rails application, authenticate user login/creation through the application of OAUTH, demonstrate convetional means of packaging, sending, and receiving JSON responses to and from the BE server, and creating a user friendly interface with styling successfully implemented. Storage of the user creation, will be stored on the backend, and packaged for the FE through the API end point that is created on the BE application. 
 
 ## Versions
 - Ruby 2.7.2
@@ -20,36 +20,35 @@ Stoke Finder FE is the frontend application of the Stoke Finder project. Stoke F
   gem 'bcrypt', '~> 3.1.7'
   gem 'faraday'
   gem 'bootstrap', '~> 5.1.3'
-  gem 'figaro'
-  gem 'omniauth-google-oauth2'
+  gem 'jsonapi-serializer'
+  gem 'geocoder'
   
   #group :development, :test
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  gem 'rspec-rails'
   gem 'pry'
-  gem 'launchy'
-  gem 'capybara'
-  gem 'orderly'
-  gem 'shoulda-matchers'
-  gem 'rspec_junit_formatter'
+  gem 'rubocop-rails'
+  gem 'figaro'
   gem 'factory_bot_rails'
+  gem 'rspec_junit_formatter'
+  gem 'faker'
   
   #group :test
-  gem 'webmock'
+  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'rspec-rails'
+  gem 'shoulda-matchers'
   gem 'simplecov'
-  gem 'faker'
   gem 'vcr'
+  gem 'webmock'
 ```
 
 ## Local Setup 
 
 1. Fork & Clone the repo 
 ```shell
-$ git clone git@github.com:stoke-finder-2110/stoke-finder-frontend.git
+$ git clone git@github.com:stoke-finder-2110/stoke-finder-backend.git
 ```
 2. Navigate to the directory 
 ```shell 
-$ cd stoke-finder-frontend 
+$ cd stoke-finder-backend 
 ```
 3. Install gem packages:
 ```shell
@@ -64,8 +63,8 @@ $ bundle update
 $ rake db:{drop,create,migrate,seed}
 ```
 ## Schema 
-![Screen Shot 2022-03-02 at 11 25 33 AM](https://user-images.githubusercontent.com/81737385/156424646-1a02280b-501d-4583-a211-555ecc7506dc.png)
-![Screen Shot 2022-03-02 at 11 26 35 AM](https://user-images.githubusercontent.com/81737385/156424805-0ae05cf8-5fc9-4d31-8da7-027a2aa31933.png)
+![Screen Shot 2022-03-02 at 1 14 29 PM](https://user-images.githubusercontent.com/81737385/156442238-b25ff194-fa60-496a-8e88-37c5e7d2c61e.png)
+![Screen Shot 2022-03-02 at 1 14 44 PM](https://user-images.githubusercontent.com/81737385/156442272-ac0b86f8-6026-41ae-b468-f67716bd5bfe.png)
 
 ## Learning Goals 
 - Create two independent applications hosted on Heroku that successfully communicate with each other
@@ -75,7 +74,6 @@ $ rake db:{drop,create,migrate,seed}
 - Implement sessions after user sign in
 - Test API exposure
 - Consume necessary APIs
-- Fetch Necessary data from APIs exposed on the BE. 
 
 ## Author
 
