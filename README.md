@@ -75,7 +75,7 @@ $ rake db:{drop,create,migrate,seed}
 - Test API exposure
 - Consume necessary APIs
 
-## Author
+## Project Contributors 
 
 <a href="https://github.com/stoke-finder-2110/stoke-finder-frontend/graphs/contributors">
   <img src="https://contrib.rocks/image?repo=stoke-finder-2110/stoke-finder-frontend" />
