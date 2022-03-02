@@ -15,8 +15,7 @@ class User < ApplicationRecord
   validates :password_digest,
             :presence => {message: "can't be blank"}
   validates :access,
-            :presence => {message: "can't be blank"},
-            :numericality => { only_integer: true, message: "needs to be an integer" }
+            :presence => {message: "can't be blank"}
   validates :street_address,
             :presence => {message: "can't be blank"}
   validates :city,
@@ -29,7 +28,7 @@ class User < ApplicationRecord
             :presence => {message: "can't be blank"}
 
   has_secure_password
-  
+
   def add_coordinates
     address = [street_address, city, state].compact.join(', ')
     cords = Geocoder.search(address).first.data
