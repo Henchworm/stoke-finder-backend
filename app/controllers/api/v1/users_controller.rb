@@ -21,7 +21,7 @@ class Api::V1::UsersController < ApplicationController
     non_auth_user_params = JSON.parse(request.raw_post)
     user = User.update(non_auth_user_params["id"], non_auth_user_params)
     if params[:id].to_i != non_auth_user_params["id"]
-      render json: { status: "ERROR", message: "User ID does not match the current user.", data: user.errors}, status: :bad_request
+      render json: { status: "ERROR", message: "User ID does not match a current user.", data: user.errors}, status: :bad_request
     elsif user.save
       user.add_coordinates
       json_response(UserSerializer.new(user))
