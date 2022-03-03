@@ -38,7 +38,9 @@ class Api::V1::UsersController < ApplicationController
 
   private
   def non_auth_user_params(user_params)
-    user_params["activity_preferences"] = user_params["activity_preferences"].join(" ")
+    if user_params["activity_preferences"].class == Array
+      user_params["activity_preferences"] = user_params["activity_preferences"].join(" ")
+    end
     params[:user].permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
   end
 
