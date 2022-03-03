@@ -17,13 +17,13 @@ RSpec.describe 'login endpoint' do
       }
       user = User.create!(user_params)
 
-      user_data = {user_name: "BobBarker123", password: "Guest"}
+      user_data = {user: "BobBarker123", password: "Guest"}
 
       headers = { "CONTENT_TYPE" => "application/json" }
       post "/api/v1/sessions", headers: headers, params: user_data, as: :json
 
       incoming = JSON.parse(response.body, symbolize_names: true)
-
+      require "pry"; binding.pry
       expect(response.status).to eq(200)
 
       expect(incoming).to be_a(Hash)
@@ -76,7 +76,7 @@ RSpec.describe 'login endpoint' do
       post "/api/v1/sessions", headers: headers, params: user_data, as: :json
 
       incoming = JSON.parse(response.body, symbolize_names: true)
-      
+
       expect(response.status).to eq(400)
 
       expect(incoming).to be_a(Hash)
