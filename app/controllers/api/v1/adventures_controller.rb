@@ -11,6 +11,17 @@ class Api::V1::AdventuresController < ApplicationController
     end
   end
 
+  def update
+    params = JSON.parse(request.raw_post)
+    adventure = Adventure.find(params["id"])
+    adventure.update(adventure_params)
+    if adventure.save
+        json_response(AdventureSerializer.new(adventure), :created)
+    else
+      render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
+    end
+  end
+
   private
   def adventure_params
     params.require(:adventure).except(:user_id).permit(
