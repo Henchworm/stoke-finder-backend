@@ -13,19 +13,20 @@ class Api::V1::UsersController < ApplicationController
       user.add_coordinates
       json_response(UserSerializer.new(user), :created)
     else
-      render json: { status: 'ERROR', message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
+      render json: { status: 400, message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
     end
   end
 
   def update
     non_auth_user_params = JSON.parse(request.raw_post)
-    user = User.find(non_auth_user_params["id"])
-    user.update(non_auth_user_params)
-    if user.save
+    user = User.update(non_auth_user_params["id"], non_auth_user_params)
+    if params[:id].to_i != non_auth_user_params["id"]
+      render json: { status: "ERROR", message: "User ID does not match a current user.", data: user.errors}, status: :bad_request
+    elsif user.save
       user.add_coordinates
-      json_response(UserSerializer.new(user), :created)
+      json_response(UserSerializer.new(user))
     else
-      render json: { status: 'ERROR', message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
+      render json: { status: "ERROR", message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
     end
   end
 

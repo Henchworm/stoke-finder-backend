@@ -1,5 +1,4 @@
 class Adventure < ApplicationRecord
-  belongs_to :CustomRecAreas
   validates_presence_of :guest_email_addresses,
                         :date,
                         :comment,

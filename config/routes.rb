@@ -6,6 +6,7 @@ Rails.application.routes.draw do
       post '/sessions/auth', to: "sessions#auth"
       resources :users, only: [:show, :create, :update, :destroy]
       resources :sessions, only: [:create]
+      resources :adventures, only: [:create, :update]
     end
   end
 end

@@ -1,24 +1,33 @@
 class User < ApplicationRecord
-  enum access: { user: 0, admin: 1}
-
-  validates_presence_of :user_name, uniqueness: true
-  validates :email, presence: true
-  validates_uniqueness_of :email
-  validates_presence_of :password_digest, require: true
-  validates_presence_of :access, require: true
-  validates_presence_of :street_address, require: true
-  validates_presence_of :city, require: true
-  validates_presence_of :state, require: true
-  validates_presence_of :zipcode, require: true
-  validates_presence_of :activity_preferences, require: true
-
-  has_secure_password
-
   has_many :custom_rec_areas
   has_many :user_adventures
   has_many :adventures, through: :user_adventures
 
-  # after_commit :add_coordinates, on: [:create, :update]
+  enum access: { user: 0, admin: 1}
+
+  validates :user_name,
+            :presence => {message: "can't be blank"},
+            :uniqueness => true
+  validates :email,
+            :format => { with: URI::MailTo::EMAIL_REGEXP },
+            :presence => {message: "can't be blank"},
+            :uniqueness => true
+  validates :password_digest,
+            :presence => {message: "can't be blank"}
+  validates :access,
+            :presence => {message: "can't be blank"}
+  validates :street_address,
+            :presence => {message: "can't be blank"}
+  validates :city,
+            :presence => {message: "can't be blank"}
+  validates :state,
+            :presence => {message: "can't be blank"}
+  validates :zipcode,
+            :presence => {message: "can't be blank"}
+  validates :activity_preferences,
+            :presence => {message: "can't be blank"}
+
+  has_secure_password
 
   def add_coordinates
     address = [street_address, city, state].compact.join(', ')
