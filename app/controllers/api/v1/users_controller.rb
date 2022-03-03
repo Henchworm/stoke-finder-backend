@@ -7,10 +7,11 @@ class Api::V1::UsersController < ApplicationController
   end
 
   def create
-    non_auth_user_params = JSON.parse(request.raw_post)
-    user = User.new(non_auth_user_params)
+    params[:user] = JSON.parse(request.raw_post)
+    user = User.new(non_auth_user_params(params[:user]))
     if user.save
       user.add_coordinates
+      user.oauth = false
       json_response(UserSerializer.new(user), :created)
     else
       render json: { status: 400, message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
@@ -36,9 +37,9 @@ class Api::V1::UsersController < ApplicationController
   end
 
   private
-  def non_auth_user_params
-    params["user"]["activity_preferences"] = params["user"]["activity_preferences"].join(" ")
-    params.require(:user).permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
+  def non_auth_user_params(user_params)
+    user_params["activity_preferences"] = user_params["activity_preferences"].join(" ")
+    params[:user].permit(:user_name, :email, :password, :password_confirmation, :access, :street_address, :city, :state, :zipcode, :activity_preferences)
   end
 
   def outh_user
