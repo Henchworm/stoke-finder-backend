@@ -1,5 +1,10 @@
 class Api::V1::AdventuresController < ApplicationController
 
+  def show
+    adventure = Adventure.find(params[:id])
+    render(json: AdventureSerializer.new(adventure))
+  end
+
   def create
     params = JSON.parse(request.raw_post)
     adventure = Adventure.new(adventure_params)
@@ -20,6 +25,11 @@ class Api::V1::AdventuresController < ApplicationController
     else
       render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
     end
+  end
+
+  def destroy
+    Adventure.find(params[:id]).delete
+    render json: {message: "Adventure successfully deleted.", status: 200}
   end
 
   private
