@@ -1,7 +1,7 @@
 class Api::V1::SessionsController < ApplicationController
 
   def auth
-    data = JSON.parse(request.raw_post)
+    data = JSON.parse(request.raw_body)
     user = User.find_by(email: data)
     if user.nil?
       render json: { status: 'OK', message: "CLEAR", data:{}}, status: :ok
@@ -12,7 +12,7 @@ class Api::V1::SessionsController < ApplicationController
   end
 
   def create
-    user_data = JSON.parse(request.raw_post)
+    user_data = JSON.parse(request.raw_body)
     user = User.find_by(user_name: user_data["user"])
     if user.present? && user.authenticate(user_data["password"])
       json_response(UserSerializer.new(user), :ok)
