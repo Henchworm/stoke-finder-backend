@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe "create an adventure request" do
+RSpec.describe "Show an adventure request" do
   describe 'shows an adventure' do
     it 'happy path' do
       user = FactoryBot.create(:user)
