@@ -40,6 +40,6 @@ RSpec.describe "create an adventure request" do
     expect(response).to_not be_successful
     parsed = JSON.parse(response.body, symbolize_names: true)
     expect(parsed).to be_a(Hash)
-    # expect(parsed[:data][:attributes][:comment]).to eq("cool rocks")
+    expect(parsed[:status]).to eq("ERROR")
   end
 end

@@ -7,7 +7,7 @@ class Api::V1::AdventuresController < ApplicationController
           UserAdventure.create!(user_id: params["user_id"], adventure_id: adventure.id)
           json_response(AdventureSerializer.new(adventure), :created)
       else
-        render json: { status: 'ERROR', message: "#{user.errors.full_messages.to_sentence}", data: user.errors}, status: :bad_request
+        render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
     end
   end
 
