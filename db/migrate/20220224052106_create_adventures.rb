@@ -7,7 +7,6 @@ class CreateAdventures < ActiveRecord::Migration[5.2]
       t.text :activities
       t.boolean :favorite
       t.integer :rec_area_id
-      t.references :custom_rec_areas, foreign_key: true
 
       t.timestamps
     end
