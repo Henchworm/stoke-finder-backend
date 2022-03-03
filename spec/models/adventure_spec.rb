@@ -17,9 +17,9 @@ RSpec.describe Adventure, type: :model do
 
   describe "creation" do
     it "creates adventure", :vcr do
-      custom_rec_area_1 = FactoryBot.create(:custom_rec_area)
-      adventure_1 = Adventure.create(
-      rec_area_id: custom_rec_area_1.id,
+
+      adventure_1 = Adventure.create!(
+      rec_area_id: 1,
       guest_email_addresses: "bob@google.com, john@reddit.com",
       activities: "Hiking, Fishing, Boating",
       comment: "cool rocks",

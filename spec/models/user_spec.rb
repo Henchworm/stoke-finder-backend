@@ -17,7 +17,7 @@ RSpec.describe User, type: :model do
 
   describe "relationships" do
     it { should have_many :user_adventures }
-    it { should have_many :custom_rec_areas }
+    # it { should have_many :custom_rec_areas }
     it { should have_many(:adventures).through(:user_adventures) }
   end
 
