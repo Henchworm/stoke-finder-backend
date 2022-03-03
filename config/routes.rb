@@ -3,7 +3,10 @@ Rails.application.routes.draw do
   root to: 'welcome#welcome'
   namespace :api do
     namespace :v1 do
+      post '/sessions/auth', to: "sessions#auth"
       resources :users, only: [:show, :create, :update, :destroy]
+      resources :sessions, only: [:create]
+      resources :adventures, only: [:create, :update]
       resources :adventures, only: [:show, :create, :update, :destroy]
     end
   end
