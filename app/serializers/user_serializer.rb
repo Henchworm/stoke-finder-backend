@@ -9,5 +9,6 @@ class UserSerializer
              :zipcode,
              :activity_preferences,
              :latitude,
-             :longitude
+             :longitude,
+             :oauth
 end
