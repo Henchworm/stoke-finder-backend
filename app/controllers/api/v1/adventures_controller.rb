@@ -6,8 +6,7 @@ class Api::V1::AdventuresController < ApplicationController
   end
 
   def create
-    # params = JSON.parse(request.raw_post)
-
+    params = JSON.parse(request.raw_post)
     adventure = Adventure.new(adventure_params)
       if adventure.save
         user = User.find(params["user_id"])
