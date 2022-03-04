@@ -12,7 +12,8 @@ class Api::V1::AdventuresController < ApplicationController
       if adventure.save
         user = User.find(params["user_id"])
         UserAdventure.create!(user_id: user.id, adventure_id: adventure.id)
-        json_response(AdventureSerializer.new(adventure), :created)
+        render json: {status: 'aliens'}
+        # json_response(AdventureSerializer.new(adventure), :created)
       else
         render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
     end
