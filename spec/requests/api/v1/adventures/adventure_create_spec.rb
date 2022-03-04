@@ -21,7 +21,7 @@ adventure_params = {
   activities:"BIKING",
   favorite:"false",
   rec_area_id:"284",
-  user_id: user.id.to_s
+  user_id: user.id
 }
 
     headers = { "CONTENT_TYPE" => "application/json" }

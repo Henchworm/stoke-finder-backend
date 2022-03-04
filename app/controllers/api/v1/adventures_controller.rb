@@ -9,8 +9,7 @@ class Api::V1::AdventuresController < ApplicationController
     params[:adventure] = JSON.parse(request.raw_post)
     adventure = Adventure.new(adventure_params(params[:adventure]))
       if adventure.save
-        user = User.find(params["user_id"])
-        UserAdventure.create!(user_id: user.id, adventure_id: adventure.id)
+        UserAdventure.create!(user_id: params[:adventure]["user_id"], adventure_id: adventure.id)
         json_response(AdventureSerializer.new(adventure), :created)
       else
         render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
