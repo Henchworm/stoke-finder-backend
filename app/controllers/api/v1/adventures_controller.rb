@@ -6,7 +6,7 @@ class Api::V1::AdventuresController < ApplicationController
   end
 
   def create
-    params = JSON.parse(request.raw_post)
+    params[:adventure] = JSON.parse(request.raw_post)
     adventure = Adventure.new(adventure_params)
       if adventure.save
         user = User.find(params["user_id"])
@@ -43,7 +43,7 @@ class Api::V1::AdventuresController < ApplicationController
     end
     params[:user_id] = params[:user_id].to_s
     params[:date] = params["date"].to_datetime
-    params.except(:user_id).permit(
+    params[:adventure].except(:user_id).permit(
       :guest_email_addresses,
       :date,
       :comment,
