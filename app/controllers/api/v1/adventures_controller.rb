@@ -9,8 +9,8 @@ class Api::V1::AdventuresController < ApplicationController
     params = JSON.parse(request.raw_post)
     adventure = Adventure.new(adventure_params)
       if adventure.save
-          UserAdventure.create!(user_id: params["user_id"], adventure_id: adventure.id)
-          json_response(AdventureSerializer.new(adventure), :created)
+        UserAdventure.create!(user_id: params["user_id"], adventure_id: adventure.id)
+        json_response(AdventureSerializer.new(adventure), :created)
       else
         render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
     end
@@ -34,13 +34,18 @@ class Api::V1::AdventuresController < ApplicationController
 
   private
   def adventure_params
-    params.require(:adventure).except(:user_id).permit(
+    if params[:favorite] == "true"
+      params[:favorite] = true
+    elsif params[:favorite] == "false"
+      params[:favorite] = false
+    end
+    params[:date] = params["date"].to_datetime
+    params.except(:user_id).permit(
       :guest_email_addresses,
       :date,
       :comment,
       :activities,
       :favorite,
-      :rec_area_id
-    )
+      :rec_area_id)
   end
 end

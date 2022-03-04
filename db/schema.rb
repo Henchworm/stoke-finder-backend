@@ -22,22 +22,8 @@ ActiveRecord::Schema.define(version: 2022_03_03_173722) do
     t.text "activities"
     t.boolean "favorite"
     t.integer "rec_area_id"
-    t.bigint "custom_rec_areas_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["custom_rec_areas_id"], name: "index_adventures_on_custom_rec_areas_id"
-  end
-
-  create_table "custom_rec_areas", force: :cascade do |t|
-    t.string "name"
-    t.string "longitude"
-    t.string "latitude"
-    t.string "activities"
-    t.text "comments"
-    t.bigint "user_id"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["user_id"], name: "index_custom_rec_areas_on_user_id"
   end
 
   create_table "user_adventures", force: :cascade do |t|
@@ -66,8 +52,6 @@ ActiveRecord::Schema.define(version: 2022_03_03_173722) do
     t.boolean "oauth"
   end
 
-  add_foreign_key "adventures", "custom_rec_areas", column: "custom_rec_areas_id"
-  add_foreign_key "custom_rec_areas", "users"
   add_foreign_key "user_adventures", "adventures"
   add_foreign_key "user_adventures", "users"
 end

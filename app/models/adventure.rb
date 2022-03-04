@@ -3,7 +3,7 @@ class Adventure < ApplicationRecord
                         :date,
                         :comment,
                         :activities,
-                        :favorite,
+                        # :favorite,
                         :rec_area_id
 
   has_many :user_adventures

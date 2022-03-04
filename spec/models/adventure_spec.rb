@@ -29,8 +29,8 @@ RSpec.describe Adventure, type: :model do
     end
 
     describe '#favorite' do
-      it { should validate_presence_of :favorite }
-      it { should_not allow_value(nil).for(:favorite) }
+      # it { should validate_presence_of :favorite }
+      # it { should_not allow_value(nil).for(:favorite) }
       it { should allow_value("abcd").for(:favorite) }
       it { should allow_value("5").for(:favorite) }
     end
