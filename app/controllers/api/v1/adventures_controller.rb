@@ -7,7 +7,7 @@ class Api::V1::AdventuresController < ApplicationController
 
   def create
     params[:adventure] = JSON.parse(request.raw_post)
-    adventure = Adventure.new(adventure_params)
+    adventure = Adventure.new(adventure_params(params[:adventure]))
       if adventure.save
         user = User.find(params["user_id"])
         UserAdventure.create!(user_id: user.id, adventure_id: adventure.id)
@@ -35,15 +35,15 @@ class Api::V1::AdventuresController < ApplicationController
   end
 
   private
-  def adventure_params
-    if params[:favorite] == "true"
-      params[:favorite] = true
-    elsif params[:favorite] == "false"
-      params[:favorite] = false
+  def adventure_params(params_adventure)
+    if params_adventure["favorite"] == "true"
+      params_adventure["favorite"] = true
+    elsif params_adventure["favorite"] == "false"
+      params_adventure["favorite"] = false
     end
-    params[:user_id] = params[:user_id].to_s
-    params[:date] = params["date"].to_datetime
+    params_adventure["date"] = params_adventure["date"].to_datetime
     params[:adventure].except(:user_id).permit(
+
       :guest_email_addresses,
       :date,
       :comment,

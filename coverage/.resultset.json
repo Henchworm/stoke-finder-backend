@@ -60,24 +60,14 @@
           null,
           null,
           1,
-          null,
-          null,
-          2,
-          2,
           1,
           1,
           1,
-          null,
-          1,
-          null,
-          null,
-          null,
           1,
           0,
           0,
           0,
-          0,
-          0,
+          null,
           null,
           0,
           null,
@@ -86,18 +76,29 @@
           1,
           0,
           0,
-          null,
-          null,
-          1,
-          1,
-          2,
           0,
-          2,
+          0,
+          0,
+          null,
+          0,
+          null,
+          null,
+          null,
+          1,
+          0,
+          0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          0,
+          1,
           1,
           null,
-          2,
-          2,
-          2,
+          1,
+          1,
+          null,
           null,
           null,
           null,
@@ -119,7 +120,7 @@
         "lines": [
           1,
           1,
-          1,
+          0,
           null,
           null
         ]
@@ -139,30 +140,17 @@
           null
         ]
       },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user_adventure.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          null
-        ]
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/adventure_serializer.rb": {
-        "lines": [
-          1,
-          1,
-          1,
-          1,
-          1,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null
-        ]
-      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/mailers/application_mailer.rb": {
+        "lines": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/models/user_adventure.rb": {
         "lines": [
           0,
           0,
@@ -177,6 +165,23 @@
           0,
           0,
           null,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "branches": {
+        }
+      },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/adventure_serializer.rb": {
+        "lines": [
           0,
           0,
           0,
@@ -316,6 +321,6 @@
         }
       }
     },
-    "timestamp": 1646357880
+    "timestamp": 1646359138
   }
 }
