@@ -61,20 +61,14 @@
           null,
           1,
           null,
-          1,
           null,
-          null,
-          null,
-          null,
-          null,
-          null,
+          2,
+          2,
           1,
           1,
           1,
-          0,
-          0,
           null,
-          0,
+          1,
           null,
           null,
           null,
@@ -96,13 +90,14 @@
           null,
           1,
           1,
-          1,
+          2,
           0,
-          1,
+          2,
           1,
           null,
-          1,
-          1,
+          2,
+          2,
+          2,
           null,
           null,
           null,
@@ -124,7 +119,7 @@
         "lines": [
           1,
           1,
-          0,
+          1,
           null,
           null
         ]
@@ -152,6 +147,21 @@
           null
         ]
       },
+      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/adventure_serializer.rb": {
+        "lines": [
+          1,
+          1,
+          1,
+          1,
+          1,
+          null,
+          null,
+          null,
+          null,
+          null,
+          null
+        ]
+      },
       "/Users/chrishewitt/Turing/3mod/stoke-finder/app/mailers/application_mailer.rb": {
         "lines": [
           0,
@@ -167,23 +177,6 @@
           0,
           0,
           null,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {
-        }
-      },
-      "/Users/chrishewitt/Turing/3mod/stoke-finder/app/serializers/adventure_serializer.rb": {
-        "lines": [
           0,
           0,
           0,
@@ -323,6 +316,6 @@
         }
       }
     },
-    "timestamp": 1646357573
+    "timestamp": 1646357880
   }
 }

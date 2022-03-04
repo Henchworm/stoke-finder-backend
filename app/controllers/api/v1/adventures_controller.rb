@@ -7,17 +7,11 @@ class Api::V1::AdventuresController < ApplicationController
 
   def create
     # params = JSON.parse(request.raw_post)
-    params = {"guest_email_addresses"=>"bob@gmail.com",
-            "date"=>"2022-03-04T01:20:00+00:00",
-            "comment"=>"woop",
-            "activities"=>"BIKING",
-            "favorite"=>"false",
-            "rec_area_id"=>"284",
-            "user_id"=>"35"}
+
     adventure = Adventure.new(adventure_params)
       if adventure.save
-        binding.pry
-        UserAdventure.create!(user_id: params["user_id"], adventure_id: adventure.id)
+        user = User.find(params["user_id"])
+        UserAdventure.create!(user_id: user.id, adventure_id: adventure.id)
         json_response(AdventureSerializer.new(adventure), :created)
       else
         render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
