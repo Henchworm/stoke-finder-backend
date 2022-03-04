@@ -11,7 +11,7 @@ class Api::V1::AdventuresController < ApplicationController
       if adventure.save
         user = User.find(params["user_id"])
         UserAdventure.create!(user_id: user.id, adventure_id: adventure.id)
-        render json: {status: 'aliens'}
+        render json: {status: 'aliens'}, status:  :created
         # json_response(AdventureSerializer.new(adventure), :created)
       else
         render json: { status: 'ERROR', message: "#{adventure.errors.full_messages.to_sentence}", data: adventure.errors}, status: :bad_request
@@ -43,7 +43,6 @@ class Api::V1::AdventuresController < ApplicationController
     end
     params_adventure["date"] = params_adventure["date"].to_datetime
     params[:adventure].except(:user_id).permit(
-
       :guest_email_addresses,
       :date,
       :comment,
