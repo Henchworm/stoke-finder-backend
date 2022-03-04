@@ -6,9 +6,17 @@ class Api::V1::AdventuresController < ApplicationController
   end
 
   def create
-    params = JSON.parse(request.raw_post)
+    # params = JSON.parse(request.raw_post)
+    params = {"guest_email_addresses"=>"bob@gmail.com",
+            "date"=>"2022-03-04T01:20:00+00:00",
+            "comment"=>"woop",
+            "activities"=>"BIKING",
+            "favorite"=>"false",
+            "rec_area_id"=>"284",
+            "user_id"=>"35"}
     adventure = Adventure.new(adventure_params)
       if adventure.save
+        binding.pry
         UserAdventure.create!(user_id: params["user_id"], adventure_id: adventure.id)
         json_response(AdventureSerializer.new(adventure), :created)
       else
@@ -39,6 +47,7 @@ class Api::V1::AdventuresController < ApplicationController
     elsif params[:favorite] == "false"
       params[:favorite] = false
     end
+    params[:user_id] = params[:user_id].to_s
     params[:date] = params["date"].to_datetime
     params.except(:user_id).permit(
       :guest_email_addresses,

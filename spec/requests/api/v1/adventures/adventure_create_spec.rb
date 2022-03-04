@@ -14,13 +14,14 @@ RSpec.describe "create an adventure request" do
     # favorite: true,
     # date: DateTime.current
     # }
-adventure_params = {guest_email_addresses: "bob@gmail.com",
+adventure_params = {
+  guest_email_addresses: "bob@gmail.com",
   date:"2022-03-03T23:43:00.000+00:00",
   comment:"woop",
   activities:"BIKING",
   favorite:"false",
   rec_area_id:"284",
-  user_id: user.id
+  user_id: user.id.to_s
 }
 
     headers = { "CONTENT_TYPE" => "application/json" }
