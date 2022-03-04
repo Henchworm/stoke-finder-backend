@@ -5,8 +5,8 @@ Rails.application.routes.draw do
     namespace :v1 do
       post '/sessions/auth', to: "sessions#auth"
       resources :users, only: [:show, :create, :update, :destroy]
-      resources :adventures, only: [:show, :create, :update, :destroy]
       resources :sessions, only: [:create]
+      resources :adventures, only: [:show, :create, :update, :destroy]
     end
   end
 end
